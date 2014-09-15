@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-
-
-</style>
 
   <meta charset="utf-8">
 
@@ -13,6 +9,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title>pg1 register</title>
+  <li class="dropdown">
+        <a id="drop4" role="button" data-toggle="dropdown" href="#">menu <span class="caret"></span></a>
+        <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="">Home</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="">Today's menu </a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="">schedule</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="">social</a></li>
+        </ul>
+      </li>
   <meta name="description" content="">
   <meta name="author" content="Nathan Dalling">
 
@@ -21,6 +27,7 @@
   <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
 </head>
 
 <body>
@@ -29,10 +36,43 @@
       <h1>Please Register for FITReady APP
       </h1>
       
+      
+      
+      <!-- home -->
+      
+      
+      
+      
     </header>
     
-    <form>
-    Full Name: <input type= "type" name="full name"/> <br>
+    
+    <div class="bs-example bs-example-tabs">
+    <ul id="myTab" class="nav nav-tabs" role="tablist">
+      <li class="active"><a href="#register" role="tab" data-toggle="tab">Register</a></li>
+      <li class=""><a href="#signin" role="tab" data-toggle="tab">Signin</a></li>
+  
+    </ul>
+    <div id="myTabContent" class="tab-content">
+      <div class="tab-pane fade active in" id="register">
+        <p>
+        	
+        	
+        	<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Resister
+</button>
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Register</h4>
+      </div>
+      <div class="modal-body">
+        <p>  <form>
+        	username: <input type= "text" name="username"/> <br>
+        	password: <input type= "text" name="password"/> <br>
+        	
+    Full Name: <input type= "text" name="full name"/> <br>
     Email <input type="text" name="email"/><br>
     Phone Number <input type="text" name="phonenum"/><br>
     weight <input type="text" name="weight"/><br>
@@ -59,9 +99,55 @@
      <input type="radio" name="Normal" id="Normal" />Normal<br>
      <input type="radio" name="slow" id="slow" />SLOW<br>
      Cheat day food (something to reward you after an intense workout) <input type="text" name="cheatfood" id="cheatfood" value="cheatfood" /><br>
-     <input type="submit" name="submit" id="submit" value="Submit" />
-    <form/>
      
+    </form>      	
+        	
+        	
+        	
+        	
+        	
+        	</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Finish</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    
+        	
+        	
+        	
+        	
+        	
+        	
+        </p>
+      </div>
+      <div class="tab-pane fade" id="Signin">
+        <p>Username <input type="text" name="user name" />  <br>
+password<input type="text" name="password" /><br>
+<input type="submit" name="submit" id="submit" value="Submit" /></p>
+
+<div class="alert alert-warning fade in" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      <strong>wHoa</strong> this site doesn work yet
+    </div>
+      </div>
+      
+    </div>
+  </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+       
     
     
     
@@ -73,6 +159,7 @@
     
     <nav>
       <p><a href="/">Home</a></p>
+      
       <p><a href="/contact">Contact</a></p>
     </nav>
 
@@ -81,6 +168,9 @@
     </div>
 
     <footer>
+    	<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="its NOT aREAL SITE YET there is no help">
+  help??
+</button>
      <p>&copy; Copyright  by Nathan Dalling</p>
     </footer>
   </div>
