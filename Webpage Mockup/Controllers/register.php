@@ -1,4 +1,4 @@
->?php
+<?php
 ini_set(dispalay,1);
 
 $action = isset($_REQUEST['action'])?$_REQUEST['action'] :null;
@@ -65,4 +65,4 @@ switch($format){
 	
 	
 	
-}
+}>
