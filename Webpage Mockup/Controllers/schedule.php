@@ -1,4 +1,5 @@
 <?php
+include_once __DIR__ . '/.../inc/all.php';
 ini_set(dispalay,1);
 
 $action = isset($_REQUEST['action'])?$_REQUEST['action'] :null;
@@ -10,7 +11,7 @@ switch($action,'_',$method){
 	case'create_GET';
 		$_view ='schedule/edit.php'
 		include __DIR__.'/.../Views/schedule/edit.php';
-		
+		$model=schedule::Blank();
 		break;
 	case'create_POST';
 		include
@@ -19,7 +20,7 @@ switch($action,'_',$method){
 		
 	case'update_GET';
 		include __DIR__.'/.../Views/schedule/edit.php';
-		
+		$model = Schedule::Get();
 		break;
 	case'update_POST';
 		
@@ -38,7 +39,7 @@ switch($action,'_',$method){
 		
 		break;
 	default
-	$model=
+	$model=Schedule::Get();
 	$view ='/...Views/schedule/index.php';
 	
 	
@@ -47,11 +48,11 @@ switch($action,'_',$method){
 }
 switch($format){
 	case'plain';
-		include __DIR__ . '/...Views/schedule/';
+		include __DIR__ . '/...Views/schedule/index.php';
 		
 		break;
 	case'json';
-		
+		echo json_encode($model);
 		break;
 		
 	case'web';

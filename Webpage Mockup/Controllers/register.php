@@ -10,9 +10,10 @@ $format = isset($_REQUEST['action'])?$_REQUEST['action'] :'web';
 
 switch($action.'_'.$method){
 	case'create_GET';
+	
 		$_view ='register/edit.php'
-		include __DIR__.'/.../Views/register/edit.php';
-		
+		include  __DIR__.'/.../Views/register/edit.php';
+		$model=register::Blank();
 		break;
 	case'create_POST';
 		include
@@ -41,7 +42,7 @@ switch($action.'_'.$method){
 		
 		break;
 	default
-	$model= Food::Get()
+	$model = Food::Get();
 	$view ='/...Views/register/index.php';
 	
 	
@@ -54,7 +55,7 @@ switch($format){
 		
 		break;
 	case'json';
-		echo
+		echo json_encode($model);
 		break;
 		
 	case'web';

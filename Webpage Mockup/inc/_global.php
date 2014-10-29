@@ -5,7 +5,7 @@ date_default_timezone_set("American/NewYork");
 function GetConnection()
 {
 	include __DIR__.'/_password.php';
-	return new mysqli('localhost','dallingn1')
+	return new mysqli('localhost','dallingn1',$sql_password,'dallingn1');
 }
 function print_r($x){
 	?><pre><?
@@ -26,8 +26,9 @@ function FetchALL($sql)
 	}
 		else{
 			while ($rs =$results->fetch_as) {
-				$ret[] =$ret
+				$ret[] =$ret;
  			}
 		
 	}
+return $ret;
 }
