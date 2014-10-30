@@ -16,7 +16,7 @@ switch($action.'_'.$method){
 		$model=register::Blank();
 		break;
 	case'create_POST';
-		include
+		my_print($_REQUEST);
 		
 		break;
 		

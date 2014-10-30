@@ -40,7 +40,8 @@
         <h4 class="modal-title">Register</h4>
       </div>
       <div class="modal-body">
-        <p>  <form>
+        <p>  
+        	<form class="form-horizontal" action="?action=create" method="action">
         	username: <input type= "text" name="username" value="<?=$model['username']?>"/> <br>
         	password: <input type= "text" name="password"value="<?=$model['password']?>"/> <br>
         	
@@ -71,19 +72,18 @@
      <input type="radio" name="Normal" id="Normal" value="<?=$model['pace'='normal']?>"/>Normal<br>
      <input type="radio" name="slow" id="slow"value="<?=$model['pace'='slow']?>" />SLOW<br>
      Cheat day food (something to reward you after an intense workout) <input type="text" name="cheatfood" id="cheatfood" value="<?=$model['cheatfood']?>"/><br>
-     
+     </div>
+      <div class="modal-footer">
+        <input type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <input type="submit" class="btn btn-primary">Finish</button>
+      </div>
     </form>      	
         	
         	
         	
         	
-        	
         	</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Finish</button>
-      </div>
+      
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
@@ -92,6 +92,18 @@
         	
         	
         	
+        	<script type="text/javascript">
+        		$(function() {
+        			$('register').addClass('active');
+        			
+        			$('.toggle-model').on('click', function  (event) {
+					  event.preventDefault();
+					  $("#myModal .modal-content").load(this.href);
+					  $("#myModal")
+					})
+				  
+				}
+        	</script>
         	
         	
         </p>
