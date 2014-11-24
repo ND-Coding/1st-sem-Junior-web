@@ -1,7 +1,9 @@
 <?php
-include_once __DIR__ . '/.../inc/all.php';
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 
-ini_set(dispalay,1);
+
+include_once __DIR__ . '/../inc/_all.php';
 
 $action = isset($_REQUEST['action'])?$_REQUEST['action'] :null;
 $method = isset($_REQUEST['HTTP_METHOD'])?$_REQUEST['HTTP_METHOD'] :'GET';
@@ -9,19 +11,19 @@ $view = null;
 $format = isset($_REQUEST['action'])?$_REQUEST['action'] :'web';
 
 switch($action.'_'.$method){
-	case'create_GET';
+	case'create_GET':
 	
-		$_view ='register/edit.php'
-		include  __DIR__.'/.../Views/register/edit.php';
+		$_view = 'register/edit.php';
+		include __DIR__ . '/../Views/register/edit.php';
 		$model=register::Blank();
 		break;
-	case'create_POST';
+	case'create_POST':
 		my_print($_REQUEST);
 		
 		break;
 		
-	case'update_GET';
-		include __DIR__.'/.../Views/register/edit.php';
+	case'update_GET':
+		include __DIR__.'/../Views/register/edit.php';
 		$model = Register::Get();
 		
 		break;
@@ -29,19 +31,19 @@ switch($action.'_'.$method){
 		
 		
 		break;
-	case'delete_GET';
+	case'delete_GET':
 		$_view ='/../Views/register/delete.php';
 		
 		break;
-	case'delete_POST';
+	case'delete_POST':
 		
 		
 		break;
-	case'index_GET';
+	case'index_GET':
 		include __DIR__.'/...Views/register/index.php';
 		
 		break;
-	default
+	default:
 	$model = Food::Get();
 	$view ='/...Views/register/index.php';
 	
@@ -69,4 +71,4 @@ switch($format){
 	
 	
 	
-}>
+}

@@ -1,5 +1,5 @@
 <?php
-include_once __DIR__ . '/.../inc/all.php';
+include_once __DIR__ . '/../inc/all.php';
 ini_set(dispalay,1);
 
 $action = isset($_REQUEST['action'])?$_REQUEST['action'] :null;
@@ -10,7 +10,7 @@ $format = isset($_REQUEST['action'])?$_REQUEST['action'] :'web';
 switch($action,'_',$method){
 	case'create_GET';
 		$_view ='social_posting/edit.php'
-		include __DIR__.'/.../Views/social_posting/edit.php';
+		include __DIR__.'/../Views/social_posting/edit.php';
 		$model=Social_posting::Blank();
 		break;
 	case'create_POST';
@@ -19,7 +19,7 @@ switch($action,'_',$method){
 		break;
 		
 	case'update_GET';
-		include __DIR__.'/.../Views/social_posting/edit.php';
+		include __DIR__.'/../Views/social_posting/edit.php';
 		$model = Social_posting::Get();
 		break;
 	case'update_POST';
