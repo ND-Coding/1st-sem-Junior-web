@@ -3,7 +3,7 @@
 /**
  * 
  */
-class register {
+class schedule {
 	
 	public static function Get($id=null)
 	{
