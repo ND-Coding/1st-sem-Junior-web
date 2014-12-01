@@ -115,7 +115,7 @@ password<input type="text" name="password" /><br>
 
 <div class="alert alert-warning fade in" role="alert">
       <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-      <strong>wHoa</strong> this site doesn work yet
+      
     </div>
       </div>
       
