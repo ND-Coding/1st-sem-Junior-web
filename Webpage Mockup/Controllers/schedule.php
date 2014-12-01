@@ -9,11 +9,11 @@ $format = isset($_REQUEST['action'])?$_REQUEST['action'] :'web';
 
 switch($action,'_',$method){
 	case'create_GET';
-		$_view ='schedule/edit.php'
+		$_view ='schedule/edit.php';
 		include __DIR__.'/.../Views/schedule/edit.php';
 		$model=schedule::Blank();
 		break;
-	case'create_POST';
+	case 'create_POST';
 		include
 		
 		break;

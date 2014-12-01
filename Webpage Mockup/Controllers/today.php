@@ -7,14 +7,14 @@ $method = isset($_REQUEST['HTTP_METHOD'])?$_REQUEST['HTTP_METHOD'] :'GET';
 $view = null;
 $format = isset($_REQUEST['action'])?$_REQUEST['action'] :'web';
 
-switch($action,'_',$method){
+switch($action , '_',$method){
 	case'create_GET';
-		$_view ='today/edit.php'
-		include __DIR__.'/.../Views/today/edit.php';
+		$_view ='today/edit.php';
+		include. __DIR__.'/.../Views/today/edit.php';
 		$model=Today::Blank();
 		break;
 	case'create_POST';
-		include
+		include;
 		
 		break;
 		
