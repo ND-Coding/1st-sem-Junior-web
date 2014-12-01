@@ -24,7 +24,7 @@ switch($action.'_'.$method){
 		
 	case'update_GET';
 		include __DIR__.'/../Views/schedule/edit.php';
-		$model = Schedule::Get();
+		$model = schedule::Get();
 		break;
 	case'update_POST';
 		
@@ -43,7 +43,7 @@ switch($action.'_'.$method){
 		
 		break;
 	default;
-	$model=Schedule::Get();
+	$model=schedule::Get();
 	$view ='/...Views/schedule/index.php';
 	
 	

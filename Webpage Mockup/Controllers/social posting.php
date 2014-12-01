@@ -16,7 +16,7 @@ switch($action.'_'.$method){
 		$_view ='social_posting/edit.php';
 		include __DIR__.'/../Views/social_posting/edit.php';
  
-		$model=Social_posting::Blank();
+		$model=social_posting::Blank();
 		break;
 	case'create_POST';
 		
@@ -24,7 +24,7 @@ switch($action.'_'.$method){
 		
 	case'update_GET';
 		include __DIR__.'/../Views/social_posting/edit.php';
-		$model = Social_posting::Get();
+		$model = social_posting::Get();
 		break;
 	case'update_POST';
 		
@@ -43,7 +43,7 @@ switch($action.'_'.$method){
 		
 		break;
 	default;
-	$model = Social_posting::Get();
+	$model = social_posting::Get();
 	$view ='/...Views/social_posting/index.php';
 	
 	

@@ -28,7 +28,7 @@ switch($action.'_'.$method){
 		
 	case'update_GET':
 		include __DIR__.'/../Views/register/edit.php';
-		$model = Register::Get();
+		$model = register::Get();
 		
 		break;
 	case'update_POST';
@@ -51,7 +51,7 @@ switch($action.'_'.$method){
 
 	default:
 
-	$model = Food::Get();
+	$model = register::Get();
 	$view ='/...Views/register/index.php';
 	
 	

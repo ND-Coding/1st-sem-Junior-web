@@ -3,7 +3,7 @@
 /**
  * 
  */
-class today {
+class Today {
 	
 	public static function Get($id=null)
 	{
