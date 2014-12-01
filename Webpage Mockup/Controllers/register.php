@@ -13,13 +13,12 @@ $format = isset($_REQUEST['action'])?$_REQUEST['action'] :'web';
 switch($action.'_'.$method){
 	case'create_GET':
 	
-<<<<<<< HEAD
+
 		$_view ='register/edit.php';
 		include __DIR__.'/.../Views/register/edit.php';
-=======
 		$_view = 'register/edit.php';
 		include __DIR__ . '/../Views/register/edit.php';
->>>>>>> e95968204f7543f660eaa771a674ea6007b0826d
+
 		$model=register::Blank();
 		break;
 	case'create_POST':
@@ -48,11 +47,10 @@ switch($action.'_'.$method){
 		include __DIR__.'/...Views/register/index.php';
 		
 		break;
-<<<<<<< HEAD
 	default;
-=======
+
 	default:
->>>>>>> e95968204f7543f660eaa771a674ea6007b0826d
+
 	$model = Food::Get();
 	$view ='/...Views/register/index.php';
 	

@@ -10,11 +10,14 @@
 	<body>
 		<div>
 			<header>
-				<h1>this is nathans header</h1>
+				<h1>this is natnmn nm ans header hshs</h1>
 			</header>
 			<nav>
+				nkn
+				 jjjjk 
+				 
 				<p>
-					<a href="/">Home</a>
+					hbhjbjh<a href="/">H nkjome</a>
 				</p>
 				<p>
 					<a href="/contact">Contact</a>

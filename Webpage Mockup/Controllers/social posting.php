@@ -9,13 +9,13 @@ $format = isset($_REQUEST['action'])?$_REQUEST['action'] :'web';
 
 switch($action.'_'.$method){
 	case'create_GET';
-<<<<<<< HEAD
+
 		$_view ='social_posting/edit.php';
 		include __DIR__.'/.../Views/social_posting/edit.php';
-=======
-		$_view ='social_posting/edit.php'
+
+		$_view ='social_posting/edit.php';
 		include __DIR__.'/../Views/social_posting/edit.php';
->>>>>>> e95968204f7543f660eaa771a674ea6007b0826d
+ 
 		$model=Social_posting::Blank();
 		break;
 	case'create_POST';

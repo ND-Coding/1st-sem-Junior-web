@@ -9,13 +9,13 @@ $format = isset($_REQUEST['action'])?$_REQUEST['action'] :'web';
 
 switch($action . '_'.$method){
 	case'create_GET';
-<<<<<<< HEAD
+
 		$_view ='today/edit.php';
 		include __DIR__.'/.../Views/today/edit.php';
-=======
-		$_view ='today/edit.php'
+
+		$_view ='today/edit.php';
 		include __DIR__.'/../Views/today/edit.php';
->>>>>>> e95968204f7543f660eaa771a674ea6007b0826d
+
 		$model=Today::Blank();
 		break;
 	case'create_POST';
