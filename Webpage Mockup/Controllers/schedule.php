@@ -1,5 +1,5 @@
 <?php
-include_once __DIR__ . '/.../inc/all.php';
+include_once __DIR__ . '/../inc/all.php';
 ini_set(dispalay,1);
 
 $action = isset($_REQUEST['action'])?$_REQUEST['action'] :null;
@@ -9,8 +9,13 @@ $format = isset($_REQUEST['action'])?$_REQUEST['action'] :'web';
 
 switch($action.'_'.$method){
 	case'create_GET';
+<<<<<<< HEAD
 		$_view ='schedule/edit.php';
 		include __DIR__.'/.../Views/schedule/edit.php';
+=======
+		$_view ='schedule/edit.php'
+		include __DIR__.'/../Views/schedule/edit.php';
+>>>>>>> e95968204f7543f660eaa771a674ea6007b0826d
 		$model=schedule::Blank();
 		break;
 	case 'create_POST';
@@ -18,7 +23,7 @@ switch($action.'_'.$method){
 		break;
 		
 	case'update_GET';
-		include __DIR__.'/.../Views/schedule/edit.php';
+		include __DIR__.'/../Views/schedule/edit.php';
 		$model = Schedule::Get();
 		break;
 	case'update_POST';

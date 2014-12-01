@@ -1,5 +1,5 @@
 <?php
-include_once __DIR__ . '/.../inc/all.php';
+include_once __DIR__ . '/../inc/all.php';
 ini_set(dispalay,1);
 
 $action = isset($_REQUEST['action'])?$_REQUEST['action'] :null;
@@ -9,8 +9,13 @@ $format = isset($_REQUEST['action'])?$_REQUEST['action'] :'web';
 
 switch($action . '_'.$method){
 	case'create_GET';
+<<<<<<< HEAD
 		$_view ='today/edit.php';
 		include __DIR__.'/.../Views/today/edit.php';
+=======
+		$_view ='today/edit.php'
+		include __DIR__.'/../Views/today/edit.php';
+>>>>>>> e95968204f7543f660eaa771a674ea6007b0826d
 		$model=Today::Blank();
 		break;
 	case'create_POST';
@@ -19,7 +24,7 @@ switch($action . '_'.$method){
 		break;
 		
 	case'update_GET';
-		include __DIR__.'/.../Views/today/edit.php';
+		include __DIR__.'/../Views/today/edit.php';
 		$model = Today::Get();
 		break;
 	case'update_POST';
