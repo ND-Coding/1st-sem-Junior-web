@@ -5,7 +5,7 @@ date_default_timezone_set("America/New_York");
 function GetConnection()
 {
 	include __DIR__.'/_password.php';
-	return new mysqli('localhost','dallingn1',$sql_password,'dallingn1.db');
+	return new mysqli('localhost','N02723913',$sql_password,'N02723913.db');
 }
 function print_n($x){
 	?><pre><?
