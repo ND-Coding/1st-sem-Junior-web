@@ -31,31 +31,31 @@
 		  <div class="form-group">
 		    <label for="selType_id" class="col-sm-2 control-label">Type</label>
 		    <div class="col-sm-10">
-		     <input type="radio" name="Body" value="<?=$model['body'='ARMS']?>">ARMS<br>
-   			 <input type="radio" name="Body" value="<?=$model['body'='LEGS']?>">LEGS<br>
-    		<input type="radio" name="Body" value="<?=$model['body'='CHEST']?>">CHEST<br>
-    		<input type="radio" name="Body" value="<?=$model['body'='NORMAL']?>">Normal<br>
+		     <input type="radio" name="Body" value="<?=$model['body'=='ARMS']?>">ARMS<br>
+   			 <input type="radio" name="Body" value="<?=$model['body'=='LEGS']?>">LEGS<br>
+    		<input type="radio" name="Body" value="<?=$model['body'=='CHEST']?>">CHEST<br>
+    		<input type="radio" name="Body" value="<?=$model['body'=='NORMAL']?>">Normal<br>
 		    </div>
 		  </div>
 		  
 		  <div class="form-group">
 		    <label for="txtCarbs" class="col-sm-2 control-label">Time Spent</label>
 		    <div class="col-sm-10">
-		       <input type="radio" name="time" value="<?=$model['time'='0']?>">none<br>
-   			 <input type="radio" name="time" value="<?=$model['time'='30']?>">30min<br>
+		       <input type="radio" name="time" value="<?=$model['time'=='0']?>">none<br>
+   			 <input type="radio" name="time" value="<?=$model['time'=='30']?>">30min<br>
    			 
 		    </div>
 		  </div>
 		  <div class="form-group">
 		    <label for="txtFiber" class="col-sm-2 control-label">DAY</label>
 		    <div class="col-sm-10">
-		      	<input type="radio" name="sunday" id="sunday"value="<?=$model['day'='sunday']?>" />Sunday<br>
-     			<input type="radio" name="monday" id="monday" value="<?=$model['day'='monday']?>"/>Monday<br>
-     			<input type="radio" name="tuesday" id="tuesday" value="<?=$model['day'='tuesday']?>"/>Tuesday<br>
-     			<input type="radio" name="wednesday" id="wednesday" value="<?=$model['day'='wednesday']?>"/>Wednesday<br>
-     			<input type="radio" name="thursday" id="thursday" value="<?=$model['day'='thursday']?>"/>Thursday<br>
-     			<input type="radio" name="friday" id="friday" value="<?=$model['day'='friday']?>"/>Friday<br>
-     			<input type="radio" name="saturday" id="saturday" value="<?=$model['day'='saturday']?>"/>>Saturday<br>
+		      	<input type="radio" name="sunday" id="sunday"value="<?=$model['day'=='sunday']?>" />Sunday<br>
+     			<input type="radio" name="monday" id="monday" value="<?=$model['day'=='monday']?>"/>Monday<br>
+     			<input type="radio" name="tuesday" id="tuesday" value="<?=$model['day'=='tuesday']?>"/>Tuesday<br>
+     			<input type="radio" name="wednesday" id="wednesday" value="<?=$model['day'=='wednesday']?>"/>Wednesday<br>
+     			<input type="radio" name="thursday" id="thursday" value="<?=$model['day'=='thursday']?>"/>Thursday<br>
+     			<input type="radio" name="friday" id="friday" value="<?=$model['day'=='friday']?>"/>Friday<br>
+     			<input type="radio" name="saturday" id="saturday" value="<?=$model['day'=='saturday']?>"/>>Saturday<br>
     				
 		    </div>
 		  </div>
