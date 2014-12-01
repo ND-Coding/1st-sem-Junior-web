@@ -42,7 +42,7 @@
 		    <label for="txtCarbs" class="col-sm-2 control-label">Time Spent</label>
 		    <div class="col-sm-10">
 		       <input type="radio" name="time" value="<?=$model['time'='0']?>">none<br>
-   			 <input type="radio" name="time" value="<?=$model['time'='0']?>">30min<br>
+   			 <input type="radio" name="time" value="<?=$model['time'='30']?>">30min<br>
    			 
 		    </div>
 		  </div>
