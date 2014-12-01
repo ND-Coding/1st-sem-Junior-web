@@ -7,14 +7,13 @@ $method = isset($_REQUEST['HTTP_METHOD'])?$_REQUEST['HTTP_METHOD'] :'GET';
 $view = null;
 $format = isset($_REQUEST['action'])?$_REQUEST['action'] :'web';
 
-switch($action,'_',$method){
+switch($action.'_'.$method){
 	case'create_GET';
-		$_view ='social_posting/edit.php'
+		$_view ='social_posting/edit.php';
 		include __DIR__.'/.../Views/social_posting/edit.php';
 		$model=Social_posting::Blank();
 		break;
 	case'create_POST';
-		include
 		
 		break;
 		
@@ -27,7 +26,7 @@ switch($action,'_',$method){
 		
 		break;
 	case'delete_GET';
-		$_view ='/../Views/social_posting/delete.php'
+		$_view ='/../Views/social_posting/delete.php';
 		
 		break;
 	case'delete_POST';
@@ -38,8 +37,8 @@ switch($action,'_',$method){
 		include __DIR__.'/...Views/social_posting/index.php';
 		
 		break;
-	default
-	$model=
+	default;
+	$model = Social_posting::Get();
 	$view ='/...Views/social_posting/index.php';
 	
 	
@@ -59,11 +58,11 @@ switch($format){
 		default;
 		break;
 	default:
-		include __DIR__.'/..Views/template.php
+		include __DIR__.'/..Views/template.php';
 		break;
 	
 	
 	
 	
 	
-}>
+}

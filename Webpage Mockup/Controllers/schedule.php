@@ -7,14 +7,13 @@ $method = isset($_REQUEST['HTTP_METHOD'])?$_REQUEST['HTTP_METHOD'] :'GET';
 $view = null;
 $format = isset($_REQUEST['action'])?$_REQUEST['action'] :'web';
 
-switch($action,'_',$method){
+switch($action.'_'.$method){
 	case'create_GET';
 		$_view ='schedule/edit.php';
 		include __DIR__.'/.../Views/schedule/edit.php';
 		$model=schedule::Blank();
 		break;
 	case 'create_POST';
-		include
 		
 		break;
 		
@@ -27,7 +26,7 @@ switch($action,'_',$method){
 		
 		break;
 	case'delete_GET';
-		$_view ='/../Views/schedule/delete.php'
+		$_view ='/../Views/schedule/delete.php';
 		
 		break;
 	case'delete_POST';
@@ -38,7 +37,7 @@ switch($action,'_',$method){
 		include __DIR__.'/...Views/schedule/index.php';
 		
 		break;
-	default
+	default;
 	$model=Schedule::Get();
 	$view ='/...Views/schedule/index.php';
 	
@@ -59,11 +58,11 @@ switch($format){
 		default;
 		break;
 	default:
-		include __DIR__.'/..Views/template.php
+		include __DIR__.'/..Views/template.php';
 		break;
 	
 	
 	
 	
 	
-}>
+}
