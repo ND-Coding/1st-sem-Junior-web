@@ -101,56 +101,7 @@
 				});
 				return total;
 			}
-			$(function(){
-				$(".food").addClass("active");
-								
-				var $mContent = $("#myModal .modal-content");
-				var defaultContent = $mContent.html();
-				
-								
-				
-				$('body').on('click', ".toggle-modal", function(event){
-					event.preventDefault();
-					$("#myModal").modal("show");
-					var $btn = $(this);
-					
-					$.get(this.href + "&format=plain", function(data){
-						$mContent.html(data);
-						$mContent.find('form')
-						.on('submit', function(e){
-							e.preventDefault();
-							$("#myModal").modal("hide");
-							
-							$.post(this.action + '&format=json', $(this).serialize(), function(data){
-								
-								$("#myAlert").show().find('div').html(JSON.stringify(data));
-								
-								if($btn.hasClass('edit')){
-									$btn.closest('tr').replaceWith(tmpl(data));							
-								}
-								if($btn.hasClass('add')){
-									$('tbody').append(tmpl(data));							
-								}
-								if($btn.hasClass('delete')){
-									$btn.closest('tr').remove();							
-								}
-								
-								$('#calories-bar').css({width: Math.round(totalCalories / goalCalories * 100) + '%'});
-							}, 'json');
-							
-							
-						});
-					});
-				})
-								
-				$('#myModal').on('hidden.bs.modal', function (e) {
-					$mContent.html(defaultContent);
-				    
-				})
-				
-				$('.alert .close').on('click',function(e){
-					$(this).closest('.alert').slideUp();
-				});
+			
 				
 			});
 		</script>
