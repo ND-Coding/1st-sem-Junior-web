@@ -1,2 +1,2 @@
 <?php
-$sql_password='s844325';
+$sql_password='Blazer13';

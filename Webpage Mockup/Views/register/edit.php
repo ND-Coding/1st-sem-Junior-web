@@ -45,7 +45,7 @@
         	username: <input type= "text" name="username" value="<?=$model['username']?>"/> <br>
         	password: <input type= "text" name="password"value="<?=$model['password']?>"/> <br>
         	
-    Full Name: <input type= "text" name="full name"value="<?=$model['full name']?>"/> <br>
+    Full Name: <input type= "text" name="fullname"value="<?=$model['fullname']?>"/> <br>
     Email <input type="text" name="email"value="<?=$model['email']?>"/><br>
     Phone Number <input type="text" name="phonenum"value="<?=$model['phonenumber']?>"/><br>
     weight <input type="text" name="weight"value="<?=$model['weight']?>"/><br>
@@ -54,23 +54,23 @@
     
     Focus on this or these parts of my body during workouts<br>
    
-    <input type="radio" name="Body" value="<?=$model['body'='ARMS']?>">ARMS<br>
-    <input type="radio" name="Body" value="<?=$model['body'='LEGS']?>">LEGS<br>
-    <input type="radio" name="Body" value="<?=$model['body'='CHEST']?>">CHEST<br>
+    <input type="radio" name="Body" value="<?=$model['body'=='ARMS']?>">ARMS<br>
+    <input type="radio" name="Body" value="<?=$model['body'=='LEGS']?>">LEGS<br>
+    <input type="radio" name="Body" value="<?=$model['body'=='CHEST']?>">CHEST<br>
     
     Set your workout days( lessdays= vigorious workouts)<br>
-     <input type="checkbox" name="sunday" id="sunday"value="<?=$model['day'='sunday']?>" />Sunday<br>
-     <input type="checkbox" name="monday" id="monday" value="<?=$model['day'='monday']?>"/>Monday<br>
-     <input type="checkbox" name="tuesday" id="tuesday" value="<?=$model['day'='tuesday']?>"/>Tuesday<br>
-     <input type="checkbox" name="wednesday" id="wednesday" value="<?=$model['day'='wednesday']?>"/>Wednesday<br>
-     <input type="checkbox" name="thursday" id="thursday" value="<?=$model['day'='thursday']?>"/>Thursday<br>
-     <input type="checkbox" name="friday" id="friday" value="<?=$model['day'='friday']?>"/>Friday<br>
-     <input type="checkbox" name="saturday" id="saturday" value="<?=$model['day'='saturday']?>"/>>Saturday<br>
+     <input type="checkbox" name="days" id="sunday"value="<?=$model['day'=='sunday']?>" />Sunday<br>
+     <input type="checkbox" name="days" id="monday" value="<?=$model['day'=='monday']?>"/>Monday<br>
+     <input type="checkbox" name="days" id="tuesday" value="<?=$model['day'=='tuesday']?>"/>Tuesday<br>
+     <input type="checkbox" name="days" id="wednesday" value="<?=$model['day'=='wednesday']?>"/>Wednesday<br>
+     <input type="checkbox" name="days" id="thursday" value="<?=$model['day'=='thursday']?>"/>Thursday<br>
+     <input type="checkbox" name="days" id="friday" value="<?=$model['day'=='friday']?>"/>Friday<br>
+     <input type="checkbox" name="days" id="saturday" value="<?=$model['day'=='saturday']?>"/>>Saturday<br>
      
      Workoutpace <br>
-     <input type="radio" name="fast" id="fast" value="<?=$model['pace'='fast']?>"/>FAST<br>
-     <input type="radio" name="Normal" id="Normal" value="<?=$model['pace'='normal']?>"/>Normal<br>
-     <input type="radio" name="slow" id="slow"value="<?=$model['pace'='slow']?>" />SLOW<br>
+     <input type="radio" name="Workout" value="<?=$model['pace'=='fast']?>"/>FAST<br>
+     <input type="radio" name="Workout" value="<?=$model['pace'=='normal']?>"/>Normal<br>
+     <input type="radio" name="Workout" value="<?=$model['pace'=='slow']?>" />SLOW<br>
      Cheat day food (something to reward you after an intense workout) <input type="text" name="cheatfood" id="cheatfood" value="<?=$model['cheatfood']?>"/><br>
      </div>
       <div class="modal-footer">
