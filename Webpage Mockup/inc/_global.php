@@ -7,11 +7,6 @@ function GetConnection()
 	include __DIR__.'/_password.php';
 	return new mysqli('localhost','dallingn1',$sql_password,'dallingn1_db');
 }
-function print_n($x){
-	?><pre><?
-		print_r($x);
-	?></pre><?
-}
 
 
 function FetchALL($sql)

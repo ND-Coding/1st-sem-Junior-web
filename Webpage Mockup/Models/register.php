@@ -7,7 +7,7 @@ class register {
 	
 	public static function Get($id=null)
 	{
-		$sql = "	SELECT * FROM 2014Fall
+		$sql = "	SELECT * FROM user
 		";
 		if($id){
 			$sql .= " WHERE id=$id ";
