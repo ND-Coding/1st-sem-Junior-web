@@ -28,10 +28,10 @@
     <ul class="nav nav-tabs" role="tablist">
       <li>Post Your Own Before and After pictures
 
-Before: <input type="image" name="before" id="before" src="" alt=""value="<?=$model['before']?>" /><br>
-After: <input type="image" name="after" id="after" src="" alt="" value="<?=$model['after']?>"/>
+Before: <input type="image" name="before"value="<?=$model['before']?>" /><br>
+After: <input type="image" name="after" value="<?=$model['after']?>"/>
 
-<input type="submit" name="picture-sub" id="picture-sub" value="Submit Your awsome pictures" />
+<input type="submit" name="picture-sub" id="picture-sub" value="Submit Your awesome pictures" />
 
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -75,12 +75,19 @@ After: <input type="image" name="after" id="after" src="" alt="" value="<?=$mode
   </div>
   ...
 </body>
-    
+    <!--<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>-->
+<!-- facebook share -->
+<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
+<a href="#js-posting">Posting  
+	</a>
 
-
- 
-<li>
-<a href="#js-posting">Posting</a>
 </li>
 <li>
 <a href="#js-caressol">Caressol</a>

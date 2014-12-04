@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Fitness Tracker</title>
+		<title>CasualFit</title>
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -29,7 +29,7 @@
 			<footer>
 				<div class="container">
 					<p>
-						&copy; Copyright  by Moshe
+						&copy; Copyright  by nathan
 					</p>
 				</div>
 			</footer>

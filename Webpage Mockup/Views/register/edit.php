@@ -5,7 +5,7 @@
 <body>
   <div>
     <header>
-      <h1>Please Register for FITReady APP
+      <h1>Please Register for CasualFit APP
       </h1>
       
       
@@ -142,8 +142,6 @@ password<input type="text" name="password" /><br>
     
     
     <nav>
-      <p><a href="/">Home</a></p>
-      
       <p><a href="/contact">Contact</a></p>
     </nav>
 
