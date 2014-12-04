@@ -13,7 +13,7 @@ function FetchALL($sql)
 {
 	$ret =array();
 	$conn = GetConnection();
-	$result= $conn->query($sql);
+	$results= $conn->query($sql);
 	
 	$error=$conn->error;
 	if($error){
