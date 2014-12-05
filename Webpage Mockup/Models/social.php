@@ -3,7 +3,7 @@
 /**
  * 
  */
-class social_posting {
+class social {
 	
 	public static function Get($id=null)
 	{

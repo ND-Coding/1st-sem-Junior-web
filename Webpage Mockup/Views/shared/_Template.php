@@ -9,8 +9,8 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="../content/css/main.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<li class="dropdown">
-        <a id="drop4" role="button" data-toggle="dropdown" href="#">menu <span class="caret"></span></a>
+		
+        
         <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
           <li role="presentation"><a role="menuitem" tabindex="-1" href="">Home</a></li>
           <li role="presentation"><a role="menuitem" tabindex="-1" href="">Today's menu </a></li>

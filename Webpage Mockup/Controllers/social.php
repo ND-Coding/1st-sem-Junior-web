@@ -12,15 +12,15 @@ $view 	= null;
 
 switch($action. '_' .$method){
 	case 'create_GET':	
-		$model = today::Blank();
-		$view = "today/edit.php";
+		$model = social::Blank();
+		$view = "social/edit.php";
 		break;
 		
 	case 'save_POST':
 			$sub_action = empty($_REQUEST['id']) ? 'created' : 'updated';
-			$errors = today::Validate($_REQUEST);
+			$errors = social::Validate($_REQUEST);
 			if(!$errors){
-				$errors = today::Save($_REQUEST);
+				$errors = social::Save($_REQUEST);
 			}
 			
 			if(!$errors){
@@ -33,7 +33,7 @@ switch($action. '_' .$method){
 			}else{
 				//my_print($errors);
 				$model = $_REQUEST;
-				$view = "today/edit.php";		
+				$view = "social/edit.php";		
 			}
 			break;
 	case 'delete':
@@ -45,21 +45,21 @@ switch($action. '_' .$method){
 			break;
 		break;
 	case 'edit_GET':
-		$model = today::Get($_REQUEST['id']);
-		$view = "today/edit.php";		
+		$model = social::Get($_REQUEST['id']);
+		$view = "social/edit.php";		
 		break;
 		
 	case 'delete_GET':
-		$model = today::Get($_REQUEST['id']);
-		$view = "today/delete.php";
+		$model = social::Get($_REQUEST['id']);
+		$view = "social/delete.php";
 		
 		break;
 		
 	case 'delete_POST':
-		$errors = today::Delete($_REQUEST['id']);
+		$errors = social::Delete($_REQUEST['id']);
 		if($errors){
-				$model = today::Get($_REQUEST['id']);
-				$view = "today/delete.php";
+				$model = social::Get($_REQUEST['id']);
+				$view = "social/delete.php";
 		}else{
 				header("Location: ?sub_action=$sub_action&id=$_REQUEST[id]");
 				die();			
@@ -69,8 +69,8 @@ switch($action. '_' .$method){
 		
 	case 'index_GET':		
 	default:
-			$model = today::Get();
-			$view = '/..Views/today/index.php';
+			$model = social::Get();
+			$view = '/..Views/social/index.php';
 	break;
 	
 }
