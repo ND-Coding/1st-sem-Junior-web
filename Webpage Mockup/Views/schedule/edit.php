@@ -11,16 +11,8 @@
     <head>
     
         <title> Schedule</title>
-        <li class="dropdown">
-        <a id="drop4" role="button" data-toggle="dropdown" href="#">menu <span class="caret"></span></a>
-        <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="">Home</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="">Today's menu </a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="">schedule</a></li>
-          <li role="presentation" class="divider"></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="">social</a></li>
-        </ul>
-      </li>
+       
+          
     </head>
     <body>
     the schedule below<br>
