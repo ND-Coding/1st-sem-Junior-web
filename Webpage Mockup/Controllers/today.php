@@ -70,13 +70,13 @@ switch($action. '_' .$method){
 	case 'index_GET':		
 	default:
 			$model = today::Get();
-			$view = '/..Views/today/index.php';
+			$view = '/../Views/today/index.php';
 	break;
 	
 }
 switch($format){
 	case'plain';
-		include __DIR__ . "/..Views/$view";
+		include __DIR__ . "/../Views/$view";
 		
 		break;
 	case 'json';
@@ -85,7 +85,7 @@ switch($format){
 		
 	case 'web';
 		default:
-			include  __DIR__ . '/..Views/shared/_Template.php';
+			include  __DIR__ . '/../Views/shared/_Template.php';
 		break;
 	
 	

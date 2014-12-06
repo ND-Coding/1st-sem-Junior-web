@@ -13,6 +13,8 @@ body  {
 }
 div {
 	background-color: #cccccd;
+	-webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
+    animation-delay: 3s;
 }
 </style>
 	<h1><div class="container">Register for CasualFit APP</div> 
@@ -28,7 +30,7 @@ div {
     <div role="tabpanel">
 
   <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
+  <ul class="nav nav-pills" role="tablist">
     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
     <li role="presentation"><a href="#Register" aria-controls="Register" role="tab" data-toggle="tab">Register</a></li>
     
@@ -36,7 +38,8 @@ div {
 
   <!-- Tab panes -->
   <div class="tab-content">
-  <div role="tabpanel" class="tab-pane active" id="home">.yooo
+  <div role="tabpanel" class="tab-pane active" id="home">
+  	
   		<form role="form">
 						  <div class="form-group">
 						    <label for="exampleInputEmail1">username</label>
