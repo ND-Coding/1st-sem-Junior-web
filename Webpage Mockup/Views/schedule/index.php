@@ -6,10 +6,13 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 </head>
+<body>
+	
+
   <title>pg1 register</title>
           <div class="table-responsive">
             <table class="table table-striped">
-              
+              <thead>
                 <tr>
                   <th>Workout</th>
                   <th>time left</th>
@@ -35,6 +38,8 @@
               </tbody>
             </table>
           </div>
+          
+          </body>
   <meta name="description" content="">
   <meta name="author" content="Nathan Dalling">
 

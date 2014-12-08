@@ -7,15 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <body>
 	<style>
-body  {
-    
-    background-color: #FF0000;
-}
-div {
-	background-color: #cccccd;
-	-webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
-    animation-delay: 3s;
-}
+
 </style>
 	<h1><div class="container">Register for CasualFit APP</div> 
       </h1>
@@ -42,7 +34,7 @@ div {
   	
   		<form role="form">
 						  <div class="form-group">
-						    <label for="exampleInputEmail1">username</label>
+						    <label for="exampleInputEmail1">Username</label>
 						    <input type="text" class="form-control" id="username" placeholder="Enter Username">
 						  </div>
 						  <div class="form-group">
@@ -68,13 +60,13 @@ div {
 							  <div class="modal-body">
 							<p>  
 							<form class="form-horizontal" action="?action=create" method="action">
-							username: <input type= "text" name="username" value="<?=$model['username']?>"/> <br>
-							password: <input type= "text" name="password"value="<?=$model['password']?>"/> <br>
+							Username: <input type= "text" name="username" value="<?=$model['username']?>"/> <br>
+							Password: <input type= "text" name="password"value="<?=$model['password']?>"/> <br>
 							    	
 							Full Name: <input type= "text" name="fullname"value="<?=$model['fullname']?>"/> <br>
 							Email <input type="text" name="email"value="<?=$model['email']?>"/><br>
 							Phone Number <input type="text" name="phonenum"value="<?=$model['phonenumber']?>"/><br>
-							weight <input type="text" name="weight"value="<?=$model['weight']?>"/><br>
+							Weight <input type="text" name="weight"value="<?=$model['weight']?>"/><br>
 							
 							
 							
@@ -84,7 +76,7 @@ div {
 							<input type="radio" name="Body" value="<?=$model['body'=='LEGS']?>">LEGS<br>
 							<input type="radio" name="Body" value="<?=$model['body'=='CHEST']?>">CHEST<br>
 							
-							Set your workout days( lessdays= vigorious workouts)<br>
+							Set your workout days( lessdays= longer workouts)<br>
 							 <input type="checkbox" name="days" id="sunday"value="<?=$model['day'=='sunday']?>" />Sunday<br>
 							 <input type="checkbox" name="days" id="monday" value="<?=$model['day'=='monday']?>"/>Monday<br>
 							 <input type="checkbox" name="days" id="tuesday" value="<?=$model['day'=='tuesday']?>"/>Tuesday<br>
