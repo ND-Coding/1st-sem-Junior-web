@@ -1,160 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
-<body>
-  <div>
-    <header>
-      <h1>Please Register for CasualFit APP
-      </h1>
-      
-      
-      
-      <!-- home -->
-      
-      
-      
-      
-    </header>
-    
-    
-    <div class="bs-example bs-example-tabs">
-    <ul id="myTab" class="nav nav-tabs" role="tablist">
-      <li class="active"><a href="#register" role="tab" data-toggle="tab">Register</a></li>
-      <li class=""><a href="#signin" role="tab" data-toggle="tab">Signin</a></li>
-  
-    </ul>
-    <div id="myTabContent" class="tab-content">
-      <div class="tab-pane fade active in" id="register">
-        <p>
-        	
-        	
-        	<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Resister
-</button>
-<div class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title">Register</h4>
-      </div>
-      <div class="modal-body">
-        <p>  
-        	<form class="form-horizontal" action="?action=create" method="action">
-        	username: <input type= "text" name="username" value="<?=$model['username']?>"/> <br>
-        	password: <input type= "text" name="password"value="<?=$model['password']?>"/> <br>
-        	
-    Full Name: <input type= "text" name="fullname"value="<?=$model['fullname']?>"/> <br>
-    Email <input type="text" name="email"value="<?=$model['email']?>"/><br>
-    Phone Number <input type="text" name="phonenum"value="<?=$model['phonenumber']?>"/><br>
-    weight <input type="text" name="weight"value="<?=$model['weight']?>"/><br>
-    
-    
-    
-    Focus on this or these parts of my body during workouts<br>
-   
-    <input type="radio" name="Body" value="<?=$model['body'=='ARMS']?>">ARMS<br>
-    <input type="radio" name="Body" value="<?=$model['body'=='LEGS']?>">LEGS<br>
-    <input type="radio" name="Body" value="<?=$model['body'=='CHEST']?>">CHEST<br>
-    
-    Set your workout days( lessdays= vigorious workouts)<br>
-     <input type="checkbox" name="days" id="sunday"value="<?=$model['day'=='sunday']?>" />Sunday<br>
-     <input type="checkbox" name="days" id="monday" value="<?=$model['day'=='monday']?>"/>Monday<br>
-     <input type="checkbox" name="days" id="tuesday" value="<?=$model['day'=='tuesday']?>"/>Tuesday<br>
-     <input type="checkbox" name="days" id="wednesday" value="<?=$model['day'=='wednesday']?>"/>Wednesday<br>
-     <input type="checkbox" name="days" id="thursday" value="<?=$model['day'=='thursday']?>"/>Thursday<br>
-     <input type="checkbox" name="days" id="friday" value="<?=$model['day'=='friday']?>"/>Friday<br>
-     <input type="checkbox" name="days" id="saturday" value="<?=$model['day'=='saturday']?>"/>>Saturday<br>
-     
-     Workoutpace <br>
-     <input type="radio" name="Workout" value="<?=$model['pace'=='fast']?>"/>FAST<br>
-     <input type="radio" name="Workout" value="<?=$model['pace'=='normal']?>"/>Normal<br>
-     <input type="radio" name="Workout" value="<?=$model['pace'=='slow']?>" />SLOW<br>
-     Cheat day food (something to reward you after an intense workout) <input type="text" name="cheatfood" id="cheatfood" value="<?=$model['cheatfood']?>"/><br>
-     </div>
-      <div class="modal-footer">
-        <input type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-        <input type="submit" class="btn btn-primary">Finish</button>
-      </div>
-    </form>      	
-        	
-        	
-        	
-        	
-        	</p>
-      
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-    
-        	
-        	
-        	
-        	
-        	<script type="text/javascript">
-        		$(function() {
-        			$('register').addClass('active');
-        			
-        			$('.toggle-model').on('click', function  (event) {
-					  event.preventDefault();
-					  $("#myModal .modal-content").load(this.href);
-					  $("#myModal")
-					})
-				  
-				}
-        	</script>
-        	
-        	
-        </p>
-      </div>
-      <div class="tab-pane fade" id="Signin">
-        <p>Username <input type="text" name="user name" />  <br>
-password<input type="text" name="password" /><br>
-<input type="submit" name="submit" id="submit" value="Submit" /></p>
-
-<div class="alert alert-warning fade in" role="alert">
-      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-      
-    </div>
-      </div>
-      
-    </div>
-  </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-       
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <nav>
-      <p><a href="/contact">Contact</a></p>
-    </nav>
-
-    <div>
-      
-    </div>
-
-    <footer>
-    	<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="its NOT aREAL SITE YET there is no help">
-  help??
-</button>
-     <p>&copy; Copyright  by Nathan Dalling</p>
-    </footer>
-  </div>
-</body>
-</html>
+<!--<form role="signinform">
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Username</label>
+						    <input type="text" class="form-control" id="id" value="<?=$model['username']?>" placeholder="Enter Username">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Password</label>
+						    <input type="password" class="form-control" id="id" value="<?=$model['password']?>"placeholder="Password">
+						  </div>
+				       </div>
+  								<button type="submit" class="btn btn-default">Submit</button>
+				</form>-->
+				
+<div role="tabpanel" class="tab-pane fadein" id="Register">
+	<br <div class="modal fade">
+			  <div class="modal-dialog">
+					<div class="modal-content">
+			 			 <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<h4 class="modal-title">Register</h4>
+				  			</div>
+							  <div class="modal-body">
+							<p>  
+							<form class="form-horizontal" action="?action=create" method="post" role="register">
+								<div class="input-group">
+									
+							<label>Username</label>
+							<input type= "text" class="form-control"name="username" id="username" value="<?=$model['username']?>"/> </div>
+							<div class="input-group">
+							<label for="password">Password</label>
+							<input type= "text"class="form-control" id="password"name="password"value="<?=$model['password']?>"/></div>
+							<div class="input-group"> 
+							<label for="usernmame">Full Name:</label>
+							<input type= "text" class="form-control"id="fullname"name="fullname"value="<?=$model['fullname']?>"/> </div>
+							<div class="input-group">
+							<label for="usernmame">Email </label>
+							<input type="text" class="form-control" id="email"name="email"value="<?=$model['email']?>"/></div>
+							<div class="input-group">
+							<label for="usernmame">Phone Number</label>
+							 <input type="text" class="form-control" id="phonenum"name="phonenum"value="<?=$model['phonenum']?>"/></div>
+							 <div class="input-group">
+							<label for="usernmame">Weight</label>
+							 <input type="text" class="form-control" id="weight"name="weight"value="<?=$model['weight']?>"/>
+							
+							</div>
+							
+							<label >Focus on this or these parts of my body during workouts</label><br>
+							   <div class="input-group">
+    							<span class="input-group-addon"> 
+							    <input type="radio" name="Body" value="<?=$model['body'=='ARMS']?>">ARMS
+							<input type="radio" name="Body" value="<?=$model['body'=='LEGS']?>">LEGS
+							<input type="radio" name="Body" value="<?=$model['body'=='CHEST']?>">CHEST
+					</span></div>
+							<label >Set your workout days( lessdays= longer workouts)</label><br>
+							 <div class="input-group">
+						    	<span class="input-group-addon"> 
+								     <input type="checkbox" name="days" id="sunday"value="<?=$model['day'=='sunday']?>" />Sunday
+								     <input type="checkbox" name="days" id="monday" value="<?=$model['day'=='monday']?>"/>Monday
+								     <input type="checkbox" name="days" id="tuesday" value="<?=$model['day'=='tuesday']?>"/>Tuesday
+								     <input type="checkbox" name="days" id="wednesday" value="<?=$model['day'=='wednesday']?>"/>Wednesday
+								     <input type="checkbox" name="days" id="thursday" value="<?=$model['day'=='thursday']?>"/>Thursday
+								     <input type="checkbox" name="days" id="friday" value="<?=$model['day'=='friday']?>"/>Friday
+								     <input type="checkbox" name="days" id="saturday" value="<?=$model['day'=='saturday']?>"/>>Saturday
+						     		</span>
+						     	</div><br>
+							 
+							 <label >Workoutpace</label> <br>
+							 <div class="input-group">
+    							<span class="input-group-addon"> 
+							 <input type="radio" name="Workout" value="<?=$model['pace'=='fast']?>"/>FAST
+							 <input type="radio" name="Workout" value="<?=$model['pace'=='normal']?>"/>Normal
+							 <input type="radio" name="Workout" value="<?=$model['pace'=='slow']?>" />SLOW
+							 </span>
+							 </div>
+							 
+							 	<div class="input-group">
+							 		<label>Cheat day food (something to reward you after an intense workout)</label >
+							 	 <input type="text" name="cheatfood" value="<?=$model['cheatfood']?>"/><br>
+							 	</div>
+							 </div>
+							  <div class="modal-footer">
+							<input type="Cancel" class="btn btn-default" data-dismiss="modal"></button>
+							<input type="submit" class="btn btn-primary">Finish</button>
+							  </div>
+							</form>      	
+					        	
+					        	
+					        	
+					        	
+					        	</p>
+					      
+					    </div>
+					  </div>
+					</div>    	
+    	
+    	</div>

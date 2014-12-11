@@ -17,6 +17,13 @@ class register {
 			return FetchAll($sql);			
 		}
 	}
+public static function Blank()
+	{
+		return array('username'=>null, 'password'=>null,',pace'=>null,'email'=>null,'phonenum'=>null
+							,'weight'=>null,'sunday'=>'no','monday'=>'no','tuesday'=>'no',
+						'wednesday'=>'no','thursday'=>'no','friday'=>'no','saturday'=>'no','fullname'=>null, 'cheatfood'=>null
+						);
+	}
 
 static public function Save(&$row)
 		{

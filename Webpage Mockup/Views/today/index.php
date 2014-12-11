@@ -6,68 +6,160 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>pg1 register</title>
   
   
   
+
   <body>
-    	<div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#food">
-          food
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in">
-      <div class="panel-body">
-        
-        
-   Breakfast : <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="food"value="<?=$model['breakfast']?>">food info</button><br>
-   Lunch : <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="food"value="<?=$model['lunch']?>">food info</button><br>
-   Dinner : <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="food"value="<?=$model['dinner']?>">food info</button><br>
-   Snack : <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="food"value="<?=$model['snack']?>">food info</button><br>
-        
-        
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#music">
-          music
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse">
-      <div class="panel-body">
-        
-        
-        Music suggestions<br>
-    Music genre: 
-    <form action="">
-    
-<select name="genre">
-<option value="R&B">R&B</option>
-<option value="Rock">Rock</option>
-<option value="Rap">Rap</option>
-<option value="Jazz">Jazz</option>
-<option value="Techno">Techno</option>
-<option value="classical">Classical</option>
-        <input type="text" name=""/>
-        <input type="submit" value="Submit"/>
-    </form>
-    <input type="submit" name="musicgenre" id="musicgenre" value="" />
-    <nav>
-        
-      </div>
-    </div>
-  </div>
- 
-</div>
+  	<div class="container content col-md" ng-app="app" ng-controller='index' >
+  	<h1>Today</h1>
+		  <div class="panel panel-default">
+			  <div class="panel-heading"><h2>Recomended Daily Food Intake</h2> </div>
+			  <div class="panel-body">
+			     <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Food type</th> 
+                  <th>Calories</th>
+                  <th>Fat</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+              	<tr >
+              		Breakfast
+              			<td>{{row.Calories}}</td>
+                  		<td>{{row.fat}}</td>
+              		</tr>
+              		<tr>Lunch
+	              		<td>{{row.Calories}}</td>
+	                  	<td>{{row.fat}}</td>
+                  </tr>
+              		<tr>Dinner
+	              		<td>{{row.Calories}}</td>
+	                  	<td>{{row.fat}}</td>
+	                  </tr>
+              		<tr>Snack
+	              		<td>{{row.Calories}}</td>
+	                  	<td>{{row.fat}}</td>
+              		 </tr>
+               
+                  
+                	
+              </tbody>
+            </table>
+          </div>
+        <h2>Your cheat food day is {{cheatfood}} enjoy on the 1st of this month </h2>
+			  </div>
+			  
+		</div>
+
+		<div class="panel panel-default col-md">
+			  <div class="panel-heading">
+			    <h2>Food Intake</h2>
+			  </div>
+			  <div class="panel-body">
+			     
+						     <div class="col-md" ng-show="showQuickAdd">
+					<input type="text" class="typeahead form-control" placeholder="Saved Foods" />
+				</div>
+				</div>
+				<div class="row" >
+					<div class="col-sm-8">
+									
+							<!-- Modal -->
+							<div class="modal fade" id="myModal" tabindex="-1" >
+							  <div class="modal-dialog">
+							    <div class="modal-content">
+							    </div>
+							  </div>
+							</div>
+							
+							<!-- Alert -->
+							<div class="alert alert-success initialy-hidden" id="myAlert">
+								<button type="button" class="close" data-dismiss="alert">
+									<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+								</button>
+								<div></div>
+							</div>
+				
+			    
+			    
+			  </div>
+			  <div class="table-responsive col-md">
+            <table class="table table-striped col-md">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Calories</th>
+                  <th>Fat (g)</th>
+                  <th>Carbs (g)</th>
+                  <th>Fiber (g)</th>
+                  <th>Time</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+               <tr ng-repeat='row in data'>
+                  <td>{{row.Name}}</td>
+                  <td>{{row.T_Name}}</td>
+                  <td>{{row.Calories}}</td>
+                  <td>{{row.Fat}}</td>
+                  <td>{{row.Carbs}}</td>
+                  <td>{{row.Fiber}}</td>
+                  <td>{{row.Time}}</td>
+                  <td>
+					<a ng-click="click(row)" title="Edit" class="btn btn-default btn-sm toggle-modal edit" data-target="#myModal" href="?action=edit&id={{row.id}}">
+						<i class="glyphicon glyphicon-pencil"></i>
+					</a>
+					<a ng-click="click(row)" title="Delete" class="btn btn-default btn-sm toggle-modal delete" data-target="#myModal" href="?action=delete&id={{row.id}}">
+						<i class="glyphicon glyphicon-trash"></i>
+					</a>
+                  	
+                  </td>
+                </tr>			
+              </tbody>
+            </table>
+          </div>> 
+		</div>
+  
+  		<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h2>Music Recomendendations</h2>
+			  </div>
+			  <div class="panel-body">
+			    <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Rap</th> 
+                  <th>RnB</th>
+                  <th>Jazz</th>
+                  <th>Techno</th>
+                  <th>Classical</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+               <tr ng-repeat='row in data'>
+                  <td><a href="https://www.youtube.com/watch?v=jltN3fLFmTQ">"i" by Kendrick Lamar</a>  </td>
+                  <td><a href="https://www.youtube.com/watch?v=k4YRWT_Aldo">"7/11" by Beyonce</a></td>
+                  <td><a href="https://www.youtube.com/watch?v=h4ZyuULy9zs">“Strange Fruit” by Billie Holiday</a></td>
+                  <td><a href="https://www.youtube.com/watch?v=eWUC5Q0RCAA">"Seek Bromance" by Tim Berg</a> </td>
+                  <td><a href="https://www.youtube.com/watch?v=nGdFHJXciAQ">"Four Seasons: Winter" by Vivaldi</a>  </td>
+                  </tr>			
+              </tbody>
+            </table>
+			    
+			    
+			  </div>
+			    
+		</div>
+		</div>
     	
+ 
+   	
     	
   
   

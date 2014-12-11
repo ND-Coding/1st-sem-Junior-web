@@ -1,118 +1,54 @@
-<head>
+<head> 
 
   <meta charset="utf-8">
 
   <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<body>
-	<style>
 
-</style>
-	<h1><div class="container">Register for CasualFit APP</div> 
-      </h1>
-      
-      
-      <!-- home -->
-      
-      
-      
-      
-    </header>
-    <div role="tabpanel">
-
-  <!-- Nav tabs -->
-  <ul class="nav nav-pills" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-    <li role="presentation"><a href="#Register" aria-controls="Register" role="tab" data-toggle="tab">Register</a></li>
-    
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-  <div role="tabpanel" class="tab-pane active" id="home">
-  	
-  		<form role="form">
-						  <div class="form-group">
-						    <label for="exampleInputEmail1">Username</label>
-						    <input type="text" class="form-control" id="username" placeholder="Enter Username">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleInputPassword1">Password</label>
-						    <input type="password" class="form-control" id="password" placeholder="Password">
-						  </div>
-				       </div>
-  								<button type="submit" class="btn btn-default">Submit</button>
-				</form>
-  	
-  	</div>
-  
-  <div role="tabpanel" class="tab-pane fade" id="Register">.
-  	
-  			<div role="tabpanel" class="tab-pane fadein" id="Register">...
-    	<br <div class="modal fade">
-				  <div class="modal-dialog">
-						<div class="modal-content">
-				 			 <div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-							<h4 class="modal-title">Register</h4>
-				  			</div>
-							  <div class="modal-body">
-							<p>  
-							<form class="form-horizontal" action="?action=create" method="action">
-							Username: <input type= "text" name="username" value="<?=$model['username']?>"/> <br>
-							Password: <input type= "text" name="password"value="<?=$model['password']?>"/> <br>
-							    	
-							Full Name: <input type= "text" name="fullname"value="<?=$model['fullname']?>"/> <br>
-							Email <input type="text" name="email"value="<?=$model['email']?>"/><br>
-							Phone Number <input type="text" name="phonenum"value="<?=$model['phonenumber']?>"/><br>
-							Weight <input type="text" name="weight"value="<?=$model['weight']?>"/><br>
-							
-							
-							
-							Focus on this or these parts of my body during workouts<br>
-							   
-							    <input type="radio" name="Body" value="<?=$model['body'=='ARMS']?>">ARMS<br>
-							<input type="radio" name="Body" value="<?=$model['body'=='LEGS']?>">LEGS<br>
-							<input type="radio" name="Body" value="<?=$model['body'=='CHEST']?>">CHEST<br>
-							
-							Set your workout days( lessdays= longer workouts)<br>
-							 <input type="checkbox" name="days" id="sunday"value="<?=$model['day'=='sunday']?>" />Sunday<br>
-							 <input type="checkbox" name="days" id="monday" value="<?=$model['day'=='monday']?>"/>Monday<br>
-							 <input type="checkbox" name="days" id="tuesday" value="<?=$model['day'=='tuesday']?>"/>Tuesday<br>
-							 <input type="checkbox" name="days" id="wednesday" value="<?=$model['day'=='wednesday']?>"/>Wednesday<br>
-							 <input type="checkbox" name="days" id="thursday" value="<?=$model['day'=='thursday']?>"/>Thursday<br>
-							 <input type="checkbox" name="days" id="friday" value="<?=$model['day'=='friday']?>"/>Friday<br>
-							 <input type="checkbox" name="days" id="saturday" value="<?=$model['day'=='saturday']?>"/>>Saturday<br>
-							 
-							 Workoutpace <br>
-							 <input type="radio" name="Workout" value="<?=$model['pace'=='fast']?>"/>FAST<br>
-							 <input type="radio" name="Workout" value="<?=$model['pace'=='normal']?>"/>Normal<br>
-							 <input type="radio" name="Workout" value="<?=$model['pace'=='slow']?>" />SLOW<br>
-							 Cheat day food (something to reward you after an intense workout) <input type="text" name="cheatfood" id="cheatfood" value="<?=$model['cheatfood']?>"/><br>
-							 </div>
-							  <div class="modal-footer">
-							<input type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-							<input type="submit" class="btn btn-primary">Finish</button>
-							  </div>
-							</form>      	
-					        	
-					        	
-					        	
-					        	
-					        	</p>
-					      
-					    </div>
-					  </div>
-					</div>/>
-    	
-    	
-    	</div>
-  	
-  	.jnjn.</div>
-  
+	
+	</head>
+	<body>
+		<style> 
+			
+			</style>
+	
+	<div class="jumbotron">
+			  <h1>Welcome to the CasualFit APP</h1>
+						  <p>Hello, if you have a CasualFit Account please login at the top of the screen
+						  	
+						  	</p>
+					  <p>Here at CasualFit, we help you become stronger with the pace you would like to go.
+					  		<h2>Features :</h2>
+					  		 <h3>Workout Schedule</h3>
+						  		 <p>- We set up workout schedule for you</p>
+						  		 <p>- Track your workouts </p>
+						  		 <p>- Notifies the you if you didnt meet the hours of your workout schedule</p>
+					  		 <h3>Today's agenda</h3>
+					  		 	<p>- We sets up a food diet </p>
+					  		 	<p>- Track your food intake</p>
+					  		 	<p>- Recomends music for your favorite genre</p>
+					  		 <h3>Social Posting</h3>
+					  		 	<p>- Submits your photos on our app to show off your before and after pictures </p>
+					  </p>
+			  <h2>If you do not have an Account , please register here..</h2> 
+			  
+			  <p><a class="btn btn-primary btn-lg toggle-modal add" data-target="#myModal" href="?action=create">
+									<i class="glyphicon glyphicon-plus"></i>
+									Register
+								</a></p>
 </div>
-   
+  
+  
+ 
+  	
+  	
+  
+    	
+    	
+    				
+  	
+  	
     
     
     <!---
@@ -132,10 +68,7 @@
  </div>
       </div>
     />-->
-    </ul>
-    <div id="myTabContent" class="tab-content">
-      <div class="tab-pane fade active in" id="register">
-        <p>
+    
         	
         	
         	<script type="text/javascript">
@@ -158,14 +91,66 @@
 					  $(this).tab('show')
 					})
         	</script>
+        	<script type="text/javascript">
+        	var $mContent;
+			var app = angular.module('app', [])
+        		.controller('index', function($scope, $http){
+				$scope.showQuickAdd = false;
+				$scope.curRow = null;
+				$scope.click = function(row){
+					$scope.curRow = row;
+				}
+				
+				$http.get('?format=json&userId=')
+				.success(function(data){
+					$scope.data = data;
+					$scope.calories = function(){ return sum(data, 'Calories'); };
+					$scope.fat = function(){ return sum(data, 'Fat');  };
+					$scope.fiber = function(){ return sum(data, 'Fiber');  };
+				});
+				
+				$('body').on('click', ".toggle-modal", function(event){
+					event.preventDefault();
+					var $btn = $(this);
+					MyFormDialog(this.href, function (data) {
+						$("#myAlert").show().find('div').html(JSON.stringify(data));
+						
+						if($btn.hasClass('edit')){
+							$scope.data[$scope.data.indexOf($scope.curRow)] = data;
+						}
+						if($btn.hasClass('add')){
+							$scope.data.push(data);							
+						}
+						if($btn.hasClass('delete')){
+							$scope.data.splice($scope.data.indexOf($scope.curRow), 1);					
+						}
+						$scope.$apply();
+					})								
+				})
+			});
+			$(function(){
+				$(".food").addClass("active");
+								
+				$mContent = $("#myModal .modal-content");
+				var defaultContent = $mContent.html();
+				
+				
+								
+				$('#myModal').on('hidden.bs.modal', function (e) {
+					$mContent.html(defaultContent);
+				    
+				})
+				
+				$('.alert .close').on('click',function(e){
+					$(this).closest('.alert').slideUp();
+				});
+				
+			});
+        	</script>
         	
         	
         </p>
-      </div>
       
-      
-    </div>
-  </div>
 	
 	</body>
   

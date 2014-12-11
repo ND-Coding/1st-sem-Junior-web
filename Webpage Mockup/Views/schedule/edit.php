@@ -1,25 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-    <meta name="description" content="">
-  <meta name="author" content="Nathan Dalling">
 
-  <meta name="viewport" content="width=device-width; initial-scale=1.0">
-
-  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <head>
     
-        <title> Schedule</title>
-       
-          
-    </head>
-    <body>
-    the schedule below<br>
-    schedule Here
+   <form>
     <div class="modal-body">
   	
-  	  
+  	  <h1> Enter Workout </h1>
 		  <div class="form-group">
 		    <label for="selType_id" class="col-sm-2 control-label">Type</label>
 		    <div class="col-sm-10">
@@ -58,30 +42,4 @@
     <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel" />
     <input type="submit" name="submit" class="btn btn-primary" value="Save changes" />
   </div>
-</form>8
-
-    
-    
-    
-    
-    intense workout coming on: DATE<br>
-
-<nav>
-      <p><a href="/">Home</a></p>
-      <p><a href="/contact">Contact</a></p>
-    </nav>
-    
-
-    <div>
-      
-    </div>
-
-    <footer>
-    	<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="its NOT aREAL SITE YET there is no help">
-  help??
-</button>
-     <p>&copy; Copyright  by Nathan Dalling</p>
-    </footer>
-    </body>
-    
-</html>
+</form>

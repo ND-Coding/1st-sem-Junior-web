@@ -7,15 +7,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 </head>
 <body>
-	
-
-  <title>pg1 register</title>
-          <div class="table-responsive">
+<h1><div class="container">Here is your workout schedule </div> 
+      </h1>	
+<div class="container content" ng-app="app" ng-controller='index' >
+  			<div class="panel panel-default">
+			  <div class="panel-heading"><h2>Workout schedule</h2> </div>
+			  <div class="panel-body">
+			    
+			  
+			  <div class="table-responsive">
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>Workout</th>
-                  <th>time left</th>
+                  <th>Workout</th> 
+                  <th>Time</th>
+                  <th>Days</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+               <tr ng-repeat='row in data'>
+                  <td>{{row.workout}}</td>
+                  <td>{{row.pace_time}}</td>
+                  <td>{{row.days}}</td>
+                  </tr>			
+              </tbody>
+            </table>
+          </div></div>
+		</div>
+
+  			<div class="panel panel-default">
+			  <div class="panel-heading"><h2>Workouts </h2> </div>
+			  <div class="panel-body">
+			    
+			  
+			  <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Workout</th> 
+                  <th>Time left</th>
                   <th>Days</th>
                   
                 </tr>
@@ -37,7 +68,10 @@
                 </tr>			
               </tbody>
             </table>
-          </div>
+          </div></div>
+		</div>  			
+         
+</div>
           
           </body>
   <meta name="description" content="">
