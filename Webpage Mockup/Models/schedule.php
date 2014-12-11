@@ -17,7 +17,7 @@ class schedule {
 			return FetchAll($sql);			
 		}
 	}
-	public static function Blank()
+public static function Blank()
 	{
 		return array('username'=>null, 'password'=>null,',pace'=>null,'email'=>null,'phonenum'=>null
 							,'weight'=>null,'sunday'=>'no','monday'=>'no','tuesday'=>'no',
@@ -78,6 +78,7 @@ static public function Save(&$row)
 		{
 			$errors = array();
 			if(empty($row['username'])) $errors['username'] = "is required";
+			if(empty($row['password'])) $errors['password'] = "is required";
 			//if(empty($row['Name'])) $errors['Name'] = "is required";
 			//if(empty($row['Calories'])) $errors['Calories'] = "is required";
 			
@@ -88,5 +89,8 @@ static public function Save(&$row)
 		}
 	
 	
-
+	
+	
+	
+	
 }

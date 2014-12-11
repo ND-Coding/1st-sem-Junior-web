@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 </head>
 <body>
-<h1><div class="container">Here is your workout schedule </div> 
-      </h1>	
+<div class="container"><h1>Here is your workout schedule  </h1>	</div> 
+     
 <div class="container content" ng-app="app" ng-controller='index' >
   			<div class="panel panel-default">
 			  <div class="panel-heading"><h2>Workout schedule</h2> </div>

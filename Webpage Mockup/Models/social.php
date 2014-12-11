@@ -16,12 +16,10 @@ class social {
 		}else{
 			return FetchAll($sql);			
 		}
-	}
+	}	
 	public static function Blank()
 	{
-		return array('username'=>null, 'password'=>null,',pace'=>null,'email'=>null,'phonenum'=>null
-							,'weight'=>null,'sunday'=>'no','monday'=>'no','tuesday'=>'no',
-						'wednesday'=>'no','thursday'=>'no','friday'=>'no','saturday'=>'no','fullname'=>null, 'cheatfood'=>null
+		return array("before"=>"$row2[before]","after"=>"$row2[after]"
 						);
 	}
 
@@ -30,19 +28,15 @@ static public function Save(&$row)
 			$conn = GetConnection();
 			
 			$row2 = escape_all($row, $conn);
-			//$row2['Time'] = date( 'Y-m-d H:i:s', strtotime( $row2['Time'] ) );
 			if (!empty($row['id'])) {
 				$sql = "Update user
-							Set username='$row2[username]', password='$row2[password]',pace = '$row2[pace]',email = '$row2[email]',phonenum='$row2[phonenum]'
-							,weight='$row2[weight]',sunday='$row2[sunday]',monday='$row2[monday]',tuesday='$row2[tuesday]',
-						wednesday='$row2[wednesday]',thursday='$row2[thursday]',friday='$row2[friday]',saturday='$row2[saturday]',fullname'$row2[fullname];				'
+							Set before='$row2[before]', after='$row2[after];				'
 						WHERE id = $row2[id]
 						";
 			}else{
 				$sql = "INSERT INTO user
-						(username,password ,created_at ,pace ,email ,phonenum ,weight,sunday,monday,tuesday,wednesday,thursday, friday, saturday,fullname )
-						VALUES ( '$row2[username]', '$row2[password]', Now(),'$row2[pace]','$row2[email]','$row2[phonenum]','$row2[weight]','$row2[sunday]','$row2[monday]','$row2[tuesday]',
-						'$row2[wednesday]','$row2[thursday]','$row2[friday]','$row2[saturday]','$row2[fullname]'  ) ";				
+						(before,after )
+						VALUES ( '$row2[before]', '$row2[after]' ) ";				
 			}
 			
 			
@@ -77,8 +71,8 @@ static public function Save(&$row)
 	static public function Validate($row)
 		{
 			$errors = array();
-			if(empty($row['username'])) $errors['username'] = "is required";
-			//if(empty($row['Name'])) $errors['Name'] = "is required";
+			if(empty($row['after'])) $errors['after'] = "is required";
+			if(empty($row['before'])) $errors['before'] = "is required";
 			//if(empty($row['Calories'])) $errors['Calories'] = "is required";
 			
 			//if($row['Carbs'] >= 20) $errors['Carbs'] = "must less than 20";
@@ -86,6 +80,7 @@ static public function Save(&$row)
 			
 			return count($errors) > 0 ? $errors : false ;
 		}
+	
 	
 
 }

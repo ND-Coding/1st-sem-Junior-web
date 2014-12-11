@@ -2,23 +2,12 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-
 		<title>CasualFit</title>
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="../content/css/main.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		
-        
-        <!--<ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="">Home</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="">Today's menu </a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="">schedule</a></li>
-          <li role="presentation" class="divider"></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="">social</a></li>
-        </ul>-->
-     
 	</head>
 
 	<body>
@@ -27,13 +16,14 @@
 			<? include __DIR__ . '/../../inc/_nav.html'; ?>
 		</div>
 			<? include __DIR__ . '/../' . $view; ?>
-			<footer>
-				<div class="row center">
-				  <div class="col-md-2"><img src="http://fc09.deviantart.net/fs41/f/2009/035/e/1/Running_Man_001_by_blubhead.gif" style="width:100px;height:100px"/></div>
-				  <div class="col-md-8"><h1>Keep up the good work!!</h1></div>
-				  <div class="col-md-2"><img src="http://fc09.deviantart.net/fs41/f/2009/035/e/1/Running_Man_001_by_blubhead.gif" style="width:100px;height:100px"/></div>
+			<footer >
+				<div class="container">
+				<div class="row">
+				  <div class="col-md-2 "><img src="http://fc09.deviantart.net/fs41/f/2009/035/e/1/Running_Man_001_by_blubhead.gif" class="center" style="width:100px;height:100px"/></div>
+				  <div class="col-md-8" ><h1 class="center">Keep up the good work!!</h1></div>
+				  <div class="col-md-2"><img src="http://fc09.deviantart.net/fs41/f/2009/035/e/1/Running_Man_001_by_blubhead.gif" class="center" style="width:100px;height:100px"/></div>
 				</div>
-					
+					</div>
 						  
 						 
 												

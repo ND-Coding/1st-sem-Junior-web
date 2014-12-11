@@ -78,6 +78,7 @@ static public function Save(&$row)
 		{
 			$errors = array();
 			if(empty($row['username'])) $errors['username'] = "is required";
+			if(empty($row['password'])) $errors['password'] = "is required";
 			//if(empty($row['Name'])) $errors['Name'] = "is required";
 			//if(empty($row['Calories'])) $errors['Calories'] = "is required";
 			
