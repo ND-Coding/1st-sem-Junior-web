@@ -130,6 +130,7 @@
 			    <h2>Music Recomendendations</h2>
 			  </div>
 			  <div class="panel-body">
+			  	<p>Enjoy the music below to motivate you during your workouts.</p>
 			    <table class="table table-striped">
               <thead>
                 <tr>

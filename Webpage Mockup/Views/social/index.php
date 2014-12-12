@@ -14,6 +14,7 @@
  <h1>Post Your Own Before and After pictures</h1>
    
  <h2> Login in to Facebook </h2>
+ <p>Like and share this page if you enjoy this page. It helps alot.</p>
  <p ><div class="fb-like center"
   data-share="true"
   data-width="450"
@@ -22,6 +23,7 @@
 </div></p>
   
 <h2>Submit</h2>
+<p>Submit your pictures to our database, we will pic out the best to post on this website </p>
 <p><a class="btn btn-success toggle-modal add" data-target="#myModal" href="?action=create">
 		<i class="glyphicon glyphicon-plus"></i>
 		Submit Pictures

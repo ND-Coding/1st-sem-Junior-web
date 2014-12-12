@@ -129,7 +129,7 @@
 				})
 			});
 			$(function(){
-				$(".food").addClass("active");
+				$(".register").addClass("active");
 								
 				$mContent = $("#myModal .modal-content");
 				var defaultContent = $mContent.html();
