@@ -42,7 +42,10 @@
   			<div class="panel panel-default">
 			  <div class="panel-heading"><h2>Workouts </h2> </div>
 			  <div class="panel-body">
-			    
+			    <a class="btn btn-success toggle-modal add" data-target="#myModal" href="?action=create">
+		<i class="glyphicon glyphicon-plus"></i>
+		Add
+	</a>
 			  
 			  <div class="table-responsive">
             <table class="table table-striped">
@@ -90,9 +93,9 @@
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
 		<script type="text/javascript" src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v2.0.0.js"></script>
 		<script type="text/javascript">
-			
+			var $mContent;
 			var app = angular.module('app', [])
-			
+		
 			.controller('index', function($scope, $http){
 				$http.get('?format=json')
 				.success(function(data){
@@ -165,20 +168,25 @@
 			function workout(data, field){
 				var total = 0;
 				
-			
-				$.if('workout'= ARMS)
+				$.if('workout'= 'Normal')
 				{
 					workout = Normal
 					workout = Arms
 				return total;
 				}
-				$.if('workout'= legs)
+				$.if('workout'= 'Arms')
+				{
+					workout = Normal
+					workout = Arms
+				return total;
+				}
+				$.if('workout'= 'Legs')
 				{ workout = Normal
 					workout = legs
 				
 				return total;
 				}
-				$.if('workout'= chest)
+				$.if('workout'= 'Chest')
 				{ workout = Normal
 					workout = Chest
 				
@@ -186,7 +194,7 @@
 				}
 			}
 			function days (argument) {
-			  var array=""
+			  var array=[""]
 			  if (Sunday="yes") {
 			  	array= array +"Sun"
 			  	

@@ -7,10 +7,10 @@
 		  <div class="form-group">
 		    <label for="selType_id" class="col-sm-2 control-label">Type</label>
 		    <div class="col-sm-10">
-		     <input type="radio" name="Body" value="<?=$model['body'=='ARMS']?>">ARMS<br>
-   			 <input type="radio" name="Body" value="<?=$model['body'=='LEGS']?>">LEGS<br>
-    		<input type="radio" name="Body" value="<?=$model['body'=='CHEST']?>">CHEST<br>
-    		<input type="radio" name="Body" value="<?=$model['body'=='NORMAL']?>">Normal<br>
+		     <input type="radio" name="Body" value="<?=$model['body'=='Arms']?>">ARMS<br>
+   			 <input type="radio" name="Body" value="<?=$model['body'=='Legs']?>">LEGS<br>
+    		<input type="radio" name="Body" value="<?=$model['body'=='Chest']?>">CHEST<br>
+    		<input type="radio" name="Body" value="<?=$model['body'=='Normal']?>">Normal<br>
 		    </div>
 		  </div>
 		  

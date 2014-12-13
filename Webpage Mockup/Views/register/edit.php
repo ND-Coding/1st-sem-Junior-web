@@ -25,23 +25,51 @@
 								<div class="input-group">
 									
 							<label>Username</label>
-							<input type= "text" class="form-control"name="username" id="username" value="<?=$model['username']?>"/> </div>
+							<input type= "text" class="form-control"name="username" id="username" value="<?=$model['username']?>"/>
+							<span style="color:red" ng-show="myForm.email.$dirty">
+							  <span ng-show="myForm.username.$error.required">username is required.</span>
+							  
+							  </span>
+							 </div>
 							<div class="input-group">
 							<label for="password">Password</label>
-							<input type= "text"class="form-control" id="password"name="password"value="<?=$model['password']?>"/></div>
+							<input type= "text"class="form-control" id="password"name="password"value="<?=$model['password']?>"/>
+							<span style="color:red" ng-show="myForm.password.$dirty">
+							  <span ng-show="myForm.password.$error.required">username is required.</span>
+							  
+							  </span>
+							</div>
 							<div class="input-group"> 
 							<label for="usernmame">Full Name:</label>
-							<input type= "text" class="form-control"id="fullname"name="fullname"value="<?=$model['fullname']?>"/> </div>
+							<input type= "text" class="form-control"id="fullname"name="fullname"value="<?=$model['fullname']?>"/> 
+							<span style="color:red" ng-show="myForm.fullname.$dirty">
+							  <span ng-show="myForm.fullname.$error.required">username is required.</span>
+							  
+							  </span>
+							</div>
 							<div class="input-group">
 							<label for="usernmame">Email </label>
-							<input type="text" class="form-control" id="email"name="email"value="<?=$model['email']?>"/></div>
+							<input type="text" class="form-control" id="email"name="email"value="<?=$model['email']?>"/>
+							<span style="color:red" ng-show="myForm.email.$dirty">
+							  <span ng-show="myForm.email.$error.required">username is required.</span>
+							  
+							  </span>
+							</div>
 							<div class="input-group">
 							<label for="usernmame">Phone Number</label>
-							 <input type="text" class="form-control" id="phonenum"name="phonenum"value="<?=$model['phonenum']?>"/></div>
+							 <input type="text" class="form-control" id="phonenum"name="phonenum"value="<?=$model['phonenum']?>"/>
+							 <span style="color:red" ng-show="myForm.phonenum.$dirty">
+							  <span ng-show="myForm.phonenum.$error.required">username is required.</span>
+							  
+							  </span>
+							 </div>
 							 <div class="input-group">
 							<label for="usernmame">Weight</label>
 							 <input type="text" class="form-control" id="weight"name="weight"value="<?=$model['weight']?>"/>
-							
+							<span style="color:red" ng-show="myForm.weight.$dirty">
+							  <span ng-show="myForm.weight.$error.required">username is required.</span>
+							  
+							  </span>
 							</div>
 							
 							<label >Focus on this or these parts of my body during workouts</label><br>
@@ -76,11 +104,15 @@
 							 	<div class="input-group">
 							 		<label>Cheat day food (something to reward you after an intense workout)</label >
 							 	 <input type="text" name="cheatfood" value="<?=$model['cheatfood']?>"/><br>
+							 	 <span style="color:red" ng-show="myForm.cheatfood.$dirty">
+							  <span ng-show="myForm.cheatfood.$error.required">cheatfood is required.</span>
+							  
+							  </span>
 							 	</div>
 							 </div>
 							  <div class="modal-footer">
 							<input type="Cancel" class="btn btn-default" data-dismiss="modal"></button>
-							<input type="submit" class="btn btn-primary">Finish</button>
+							<input type="submit" ng-disabled="myForm.user.$dirty || myForm.email.$dirty "class="btn btn-primary"></button>
 							  </div>
 							</form>      	
 					        	
