@@ -151,18 +151,16 @@
 			var $mContent;
 			var app = angular.module('app', [])
 			function schedule($scope) {
-				    $scope.workout =[ ] ,
-				    $scope.pace_time = pace
-				    $scope.days = [
-        				{name:'Sunday'},
-        				{name:'Monday'},
-        				{name:'Tuesday'},
-        				{name:'Wednesday'},
-        				{name:'Thursday'},
-        				{name:'Friday'},
-        				{name:'Saturday'}
-    ];
-				}				
+				    {$scope.body =body };
+				    {$scope.pace = pace};
+				    {$scope.Sun =Sun};
+				    {$scope.Mon = Mon};
+				    {$scope.Tues = Tues};
+				    {$scope.Wed = Wed};
+				    {$scope.Thu = Thu};
+				    {$scope.Fri = Fri};
+				    {$scope.Sat = Sat};
+				   				}				
 			.controller('index', function($scope, $http){
 				$http.get('?format=json')
 				.success(function(data){
@@ -192,13 +190,7 @@
 					})								
 				})
 			});
-			function namesController($scope) {
-				    $scope.wor = [
-				        {name:'Jani',country:'Norway'},
-				        {name:'Hege',country:'Sweden'},
-				        {name:'Kai',country:'Denmark'}
-				    ];
-				}
+			
 			function MyFormDialog (url, then /*callback when the form is submitted*/) {
 			  	$("#myModal").modal("show");
 			  	$.get(url + "&format=plain", function(data){
@@ -239,60 +231,8 @@
 			 	}
 			 
 			}			
-			function workout(data, field){
-				var total = 0;
-				
-				$.if('workout'= 'Normal')
-				{
-					workout = Normal
-					workout = Arms
-				return total;
-				}
-				$.if('workout'= 'Arms')
-				{
-					workout = Normal
-					workout = Arms
-				return total;
-				}
-				$.if('workout'= 'Legs')
-				{ workout = Normal
-					workout = legs
-				
-				return total;
-				}
-				$.if('workout'= 'Chest')
-				{ workout = Normal
-					workout = Chest
-				
-				return total;
-				}
-			}
-			function days (argument) {
-			  var array=[""]
-			  if (Sunday="yes") {
-			  	array= array +"Sun"
-			  	
-			  };
-			  if ('Monday'="yes") {
-			  	array= array +"Mon"
-			  };
-			   if ('Tuesday'="yes") {
-			  	array= array +"Sun"
-			  };
-			   if ('Wednesday'="yes") {
-			  	array= array +"Sun"
-			  };
-			   if ('Thursday'="yes") {
-			  	array= array +"Sun"
-			  };
-			   if ('Friday'="yes") {
-			  	array= array +"Sun"
-			  };
-			   if ('Saturday'="yes") {
-			  	array= array +"Sun"
-			  };
-			  return array;
-			}
+			
+			
 			
 			$(function(){
 				$(".schedule").addClass("active");
