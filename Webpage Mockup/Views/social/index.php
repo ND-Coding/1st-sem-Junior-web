@@ -21,6 +21,9 @@
   data-show-faces="true"> 
  
 </div></p>
+<p><a class="twitter-timeline" href="https://twitter.com/hashtag/casualfit" data-widget-id="543916230600450048">#casualfit Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</p>
   
 <h2>Submit</h2>
 <p>Submit your pictures to our database, we will pic out the best to post on this website </p>
@@ -87,6 +90,24 @@
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
+   
+   var $socialScope = null;
+			app.controller('social', function($scope){
+					$socialScope = $scope;
+					$socialScope.$apply();
+			});
+			function checkLoginState() {
+			    FB.getLoginStatus(function(response) {
+				    $socialScope.status = response;
+				    if (response.status === 'connected') {
+				      FB.api('/me', function(response) {
+					      $socialScope.me = response;
+					      $socialScope.$apply();
+					      console.log(response);
+					    });
+				    }
+			    });
+			  }
 </script>
 </body>
   

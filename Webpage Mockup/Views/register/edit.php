@@ -12,7 +12,9 @@
 				</form>-->
 				
 <div role="tabpanel" class="tab-pane fadein" id="Register">
+	<input type="hidden" name="id" value="<?=$model['id']?>" />
 	<br <div class="modal fade">
+		
 			  <div class="modal-dialog">
 					<div class="modal-content">
 			 			 <div class="modal-header">
@@ -20,6 +22,15 @@
 							<h4 class="modal-title">Register</h4>
 				  			</div>
 							  <div class="modal-body">
+							  	<? if(!empty($errors)): ?>
+							  			<div class="alert alert-danger">
+							  				<ul>
+							  				<? foreach ($errors as $key => $value): ?>
+												  <li><?=$key?> <?= $value ?></li>
+											<? endforeach; ?>
+											</ul>
+							  			</div>
+							  		<? endif; ?>
 							<p>  
 							<form class="form-horizontal" action="?action=create" method="post" role="register">
 								<div class="input-group">
@@ -72,38 +83,12 @@
 							  </span>
 							</div>
 							
-							<label >Focus on this or these parts of my body during workouts</label><br>
-							   <div class="input-group">
-    							<span class="input-group-addon"> 
-							    <input type="radio" name="Body" value="<?=$model['body'=='ARMS']?>">ARMS
-							<input type="radio" name="Body" value="<?=$model['body'=='LEGS']?>">LEGS
-							<input type="radio" name="Body" value="<?=$model['body'=='CHEST']?>">CHEST
-					</span></div>
-							<label >Set your workout days( lessdays= longer workouts)</label><br>
-							 <div class="input-group">
-						    	<span class="input-group-addon"> 
-								     <input type="checkbox" name="days" id="sunday"value="<?=$model['day'=='sunday']?>" />Sunday
-								     <input type="checkbox" name="days" id="monday" value="<?=$model['day'=='monday']?>"/>Monday
-								     <input type="checkbox" name="days" id="tuesday" value="<?=$model['day'=='tuesday']?>"/>Tuesday
-								     <input type="checkbox" name="days" id="wednesday" value="<?=$model['day'=='wednesday']?>"/>Wednesday
-								     <input type="checkbox" name="days" id="thursday" value="<?=$model['day'=='thursday']?>"/>Thursday
-								     <input type="checkbox" name="days" id="friday" value="<?=$model['day'=='friday']?>"/>Friday
-								     <input type="checkbox" name="days" id="saturday" value="<?=$model['day'=='saturday']?>"/>>Saturday
-						     		</span>
-						     	</div><br>
-							 
-							 <label >Workoutpace</label> <br>
-							 <div class="input-group">
-    							<span class="input-group-addon"> 
-							 <input type="radio" name="Workout" value="<?=$model['pace'=='fast']?>"/>FAST
-							 <input type="radio" name="Workout" value="<?=$model['pace'=='normal']?>"/>Normal
-							 <input type="radio" name="Workout" value="<?=$model['pace'=='slow']?>" />SLOW
-							 </span>
-							 </div>
+							
+							
 							 
 							 	<div class="input-group">
 							 		<label>Cheat day food (something to reward you after an intense workout)</label >
-							 	 <input type="text" name="cheatfood" value="<?=$model['cheatfood']?>"/><br>
+							 	 <input type="text" name="cheatfood" id="cheatfood" value="<?=$model['cheatfood']?>"/><br>
 							 	 <span style="color:red" ng-show="myForm.cheatfood.$dirty">
 							  <span ng-show="myForm.cheatfood.$error.required">cheatfood is required.</span>
 							  

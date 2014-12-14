@@ -145,7 +145,7 @@
 					$(this).closest('.alert').slideUp();
 				});
 				
-			});
+			)};
         	</script>
         	
         	

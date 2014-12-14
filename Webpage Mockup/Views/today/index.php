@@ -13,6 +13,18 @@
   <body>
   	<div class="container content col-md" ng-app="app" ng-controller='index' >
   	<h1>Today</h1>
+  	<div class="input-group">
+    				<span class="input-group-addon"> 
+							<input type="radio" ng-model="body"value="ARMS">ARMS
+							<input type="radio" ng-model="body"value="LEGS">LEGS
+							<input type="radio" ng-model="body" value="CHEST">CHEST
+					</span></div>
+	<div class="input-group">
+    							<span class="input-group-addon"> 
+							    <input type="radio" ng-model="height"value="ARMS">ARMS
+							<input type="radio" ng-model="body"value="LEGS">LEGS
+							<input type="radio" ng-model="body" value="CHEST">CHEST
+					</span></div>				
 		  <div class="panel panel-default">
 			  <div class="panel-heading"><h2>Recomended Daily Food Intake</h2> </div>
 			  <div class="panel-body">
@@ -28,21 +40,21 @@
               </thead>
               <tbody>
               	<tr >
-              		Breakfast
-              			<td>{{row.Calories}}</td>
-                  		<td>{{row.fat}}</td>
+              		<td>Breakfast</td>
+              			<td>{{Calories/3}}</td>
+                  		<td>{{Fat/3}}</td>
               		</tr>
-              		<tr>Lunch
-	              		<td>{{row.Calories}}</td>
-	                  	<td>{{row.fat}}</td>
+              		<td>Lunch</td>
+	              		<td>{{Calories/3}}</td>
+	                  	<td>{{Fat/3}}</td>
                   </tr>
-              		<tr>Dinner
-	              		<td>{{row.Calories}}</td>
-	                  	<td>{{row.fat}}</td>
+              		<td>Dinner</td>
+	              		<td>{{Calories/3}}</td>
+	                  	<td>{{Fat/3}}</td>
 	                  </tr>
-              		<tr>Snack
-	              		<td>{{row.Calories}}</td>
-	                  	<td>{{row.fat}}</td>
+              		<td>Snack</td>
+	              		<td>{Calories/3}}</td>
+	                  	<td>{{Fat/3}}</td>
               		 </tr>
                
                   

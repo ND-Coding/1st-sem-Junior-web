@@ -42,11 +42,14 @@ static public function Save(&$row)
 				$sql = "INSERT INTO user
 						(username,password ,created_at ,pace ,email ,phonenum ,weight,sunday,monday,tuesday,wednesday,thursday, friday, saturday,fullname )
 						VALUES ( '$row2[username]', '$row2[password]', Now(),'$row2[pace]','$row2[email]','$row2[phonenum]','$row2[weight]','$row2[sunday]','$row2[monday]','$row2[tuesday]',
-						'$row2[wednesday]','$row2[thursday]','$row2[friday]','$row2[saturday]','$row2[fullname]'  ) ";				
+						'$row2[wednesday]','$row2[thursday]','$row2[friday]','$row2[saturday]','$row2[fullname]'  ) 
+						INSERT INTO login (`id`, `username`, `password`) VALUES ($row2[id],'$row2[username]','$row2[password]')
+						";
+										
 			}
 			
 			
-			//my_print( $sql );
+			my_print( $sql );
 			
 			$results = $conn->query($sql);
 			$error = $conn->error;
@@ -66,7 +69,7 @@ static public function Save(&$row)
 		{
 			$conn = GetConnection();
 			$sql = "DELETE FROM user WHERE id = $id";
-			//echo $sql;
+			echo $sql;
 			$results = $conn->query($sql);
 			$error = $conn->error;
 			$conn->close();

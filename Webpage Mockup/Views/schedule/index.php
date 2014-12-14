@@ -6,17 +6,43 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 </head>
-<body>
+<body
 <div class="container"><h1>Here is your workout schedule  </h1>	</div> 
      
-<div class="container content" ng-app="app" ng-controller='index' >
+<div class="container content" ng-app="app" ng-controller='schedule' >
   			<div class="panel panel-default">
 			  <div class="panel-heading"><h2>Workout schedule</h2> </div>
 			  <div class="panel-body">
-			    <p>If workout is Normal then enjoy workingouts at thegym , play sports or any other general workouts.</p>
-			    <p>If workout is Legs then enjoy a run in the park, weighted squats or any other leg exercises. </p>
-			    <p>If workout is Arms then enjoy lifting dumbells, pushups, pullups or any other arm exercises. </p>
-			    <p>If workout is Chest then enjoy bench lifting, resistant band exercise or any other chest exercises.</p>
+			  	
+			  	<label >Focus on this or these parts of my body during workouts</label><br>
+							   <div class="input-group">
+    							<span class="input-group-addon"> 
+							    <input type="radio"name="body" id="body"ng-model="body"value="ARMS">ARMS
+							<input type="radio" id="body" name="body" ng-model="body"value="LEGS">LEGS
+							<input type="radio" id="body" name="body" ng-model="body" value="CHEST">CHEST
+					</span></div>
+					<label >Set your workout days( lessdays= longer workouts)</label><br>
+							 <div class="input-group">
+						    	<span class="input-group-addon"> 
+								     <input type="radio" id="day" ng-model="Sun" value="yes" />Sunday
+								     <input type="radio" id="day" ng-model="Mon" value="yes "/>Monday
+								     <input type="radio" id="day" ng-model="Tues"value="yes"/>Tuesday
+								     <input type="radio" id="day" ng-model="Wed" value="yes"/>Wednesday
+								     <input type="radio" id="day" ng-model="Thu" value="yes"/>Thursday
+								     <input type="radio" id="day" ng-model="Fri" value="yes"/>Friday
+								     <input type="radio" id="day" ng-model="Sat" value="yes"/>Saturday
+						     		</span>
+						     	</div><br>
+							 
+							 <label >Workoutpace</label> <br>
+							 <div class="input-group">
+    							<span class="input-group-addon"> 
+							 <input type="radio" name="pace" id="pace" value="14"/>FAST
+							 <input type="radio" name="pace" id="pace" value="7"/>Normal
+							 <input type="radio" name="pace" id="pace" value="5" />SLOW
+							 </span>
+							 </div>
+			    
 			  
 			  <div class="table-responsive">
             <table class="table table-striped">
@@ -24,21 +50,50 @@
                 <tr>
                   <th>Workout</th> 
                   <th>Time</th>
-                  <th>Days</th>
-                  
+                  <th>Sun</th>
+                  <th>Mon</th>
+                  <th>Tues</th>
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+                  <th>Sat<th>
                 </tr>
               </thead>
               <tbody>
-               <tr ng-repeat='row in data'>
-                  <td>{{row.workout}}</td>
-                  <td>{{row.pace_time}}</td>
-                  <td>{{row.days}}</td>
-                  </tr>			
+               <tr>
+                  <td>nomal</td>
+                  <td>{{pace/2}}</td>
+                  <td>{{Sun}}</td>
+                  <td>{{Mon}}</td>
+                  <td>{{Tues}}</td>
+                  <td>{{Wed}}</td>
+                  <td>{{Thu}}</td>
+                  <td>{{Fri}}</td>
+                  <td>{{Sat}}</td>
+                  
+                  </tr>	
+                  <tr>
+                  <td>{{body}}</td>
+                  <td>{{pace/2}}</td>
+                  <td>{{Sun}}</td>
+                  <td>{{Mon}}</td>
+                  <td>{{Tues}}</td>
+                  <td>{{Wed}}</td>
+                  <td>{{Thu}}</td>
+                  <td>{{Fri}}</td>
+                  <td>{{Sat}}</td>
+                  </tr>					
               </tbody>
             </table>
-          </div></div>
+          </div>
+          <p>If workout is Normal then enjoy workingouts at thegym , play sports or any other general workouts.</p>
+			    <p>If workout is Legs then enjoy a run in the park, weighted squats or any other leg exercises. </p>
+			    <p>If workout is Arms then enjoy lifting dumbells, pushups, pullups or any other arm exercises. </p>
+			    <p>If workout is Chest then enjoy bench lifting, resistant band exercise or any other chest exercises.</p>
+          
+          </div>
 		</div>
-
+</div><div class="container content" ng-app="app" ng-controller='schedule' >
   			<div class="panel panel-default">
 			  <div class="panel-heading"><h2>Workouts </h2> </div>
 			  <div class="panel-body">
@@ -77,7 +132,7 @@
           </div></div>
 		</div>  			
          
-</div>
+</div></div>
           
           </body>
   <meta name="description" content="">
@@ -95,7 +150,19 @@
 		<script type="text/javascript">
 			var $mContent;
 			var app = angular.module('app', [])
-		
+			function schedule($scope) {
+				    $scope.workout =[ ] ,
+				    $scope.pace_time = pace
+				    $scope.days = [
+        				{name:'Sunday'},
+        				{name:'Monday'},
+        				{name:'Tuesday'},
+        				{name:'Wednesday'},
+        				{name:'Thursday'},
+        				{name:'Friday'},
+        				{name:'Saturday'}
+    ];
+				}				
 			.controller('index', function($scope, $http){
 				$http.get('?format=json')
 				.success(function(data){
@@ -125,6 +192,13 @@
 					})								
 				})
 			});
+			function namesController($scope) {
+				    $scope.wor = [
+				        {name:'Jani',country:'Norway'},
+				        {name:'Hege',country:'Sweden'},
+				        {name:'Kai',country:'Denmark'}
+				    ];
+				}
 			function MyFormDialog (url, then /*callback when the form is submitted*/) {
 			  	$("#myModal").modal("show");
 			  	$.get(url + "&format=plain", function(data){
