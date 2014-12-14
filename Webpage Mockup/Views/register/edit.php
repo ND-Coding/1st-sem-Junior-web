@@ -32,7 +32,7 @@
 							  			</div>
 							  		<? endif; ?>
 							<p>  
-							<form class="form-horizontal" action="?action=create" method="post" role="register">
+							<form class="form-horizontal" action="?action=save" method="post" role="register">
 								<div class="input-group">
 									
 							<label>Username</label>
