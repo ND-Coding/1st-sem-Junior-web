@@ -36,7 +36,13 @@ static public function Save(&$row)
 						";
 			}else{
 				$sql = "INSERT INTO `workout`( `type`, `time`, `hours`, `day`)
-				 VALUES ('$row2[type]',Now(),'$row2[hours]','$row2[day]')";				
+				 VALUES ('$row2[type]',Now(),'$row2[hours]','$row2[day]')";		
+				$sql="
+				INSERT INTO `friends`
+				(`friend`) 
+				VALUES ('$row2[friend]')
+				
+				"	;	
 			}
 			
 			

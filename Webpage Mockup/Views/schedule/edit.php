@@ -1,4 +1,5 @@
-
+<form class="form-horizontal" action="?action=save" method="post" role="schedule">
+							    <div class="modal-body">
     <div role="tabpanel" class="tab-pane fadein" id="Register">
 	<input type="hidden" name="id" value="<?=$model['id']?>" />
 	<br <div class="modal fade">
@@ -20,10 +21,17 @@
 							  			</div>
 							  		<? endif; ?>
 							<p>  
-							  <form class="form-horizontal" action="?action=save" method="post" role="schedule">
-							    <div class="modal-body">
+							  
+							    	
 							  	
 							  	  <h1> Enter Workout </h1>
+							  	  <label>friend</label>
+							<input type= "text" class="form-control"name="friend" id="friend" value="<?=$model['friend']?>"/>
+							
+							  
+							  
+							
+							 </div>
 									  <div class="form-group">
 									    <label for="selType_id" class="col-sm-2 control-label">Type </label>
 									    <p>(arms legs,chest or normal)</p>

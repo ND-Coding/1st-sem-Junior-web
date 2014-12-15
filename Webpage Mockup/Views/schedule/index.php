@@ -9,60 +9,24 @@
 
 <div class="container"><h1>Here is your workout schedule  </h1>	</div> 
      
-<div class="container content" ng-app="app" ng-controller='index' >
+<div  >
   			<div class="panel panel-default">
 			  <div class="panel-heading"><h2>Workout schedule</h2> </div>
 			  <div class="panel-body">
-			  	<div class="well" ng-controller="bmiCalculator" >
-				<input type="text" ng-model='height' class="form-control" placeholder="Your Height (in)" />
-				<input type="text" ng-model='weight'  class="form-control" placeholder="Your Weight" />
-				<div class="alert alert-success">
-					Your BMI: {{ results() }}
-				</div>
-			</div>
+			  	
 			  	<label >Focus on this or these parts of my body during workouts</label><br>
-							   <div class="input-group">
-    							<span class="input-group-addon"> 
-							    <input type="radio"name="body" id="body"ng-model="body"value="ARMS">ARMS
-							<input type="radio" id="body" name="body" ng-model="body"value="LEGS">LEGS
-							<input type="radio" id="body" name="body" ng-model="body" value="CHEST">CHEST
-					</span></div>
+							   
 					<label >Set your workout days( lessdays= longer workouts)</label><br>
-							 <div class="input-group">
-						    	<span class="input-group-addon"> 
-								     <input type="radio" id="day" ng-model="Sun" value="yes" />Sunday
-								     <input type="radio" id="day" ng-model="Mon" value="yes "/>Monday
-								     <input type="radio" id="day" ng-model="Tues"value="yes"/>Tuesday
-								     <input type="radio" id="day" ng-model="Wed" value="yes"/>Wednesday
-								     <input type="radio" id="day" ng-model="Thu" value="yes"/>Thursday
-								     <input type="radio" id="day" ng-model="Fri" value="yes"/>Friday
-								     <input type="radio" id="day" ng-model="Sat" value="yes"/>Saturday
-						     		</span>
-						     	</div><br>
+						
 							 
-							 <label >Workoutpace</label> <br>
-							 <div class="input-group">
-    							<span class="input-group-addon"> 
-							 <input type="radio" name="pace" id="pace" value="14"/>FAST
-							 <input type="radio" name="pace" id="pace" value="7"/>Normal
-							 <input type="radio" name="pace" id="pace" value="5" />SLOW
-							 </span>
-							 </div>
+							 <label >Workout hours</label> <br>
+							 
 			    
 			  
 			  <div class="table-responsive">
             <table class="table table-striped">
               <thead>
-              	<body ng-controller="PhoneListCtrl">
-
-  <ul>
-    <li ng-repeat="phone in phones">
-      <span>{{phone.name}}</span>
-      <p>{{phone.snippet}}</p>
-    </li>
-  </ul>
-
-</body>
+              	
                 <tr>
                   <th>Workout</th> 
                   <th>Time</th>
@@ -78,31 +42,105 @@
               <tbody>
                <tr>
                   <td>nomal</td>
-                  <td>{{pace/2}}</td>
-                  <td>{{Sun}}</td>
-                  <td>{{Mon}}</td>
-                  <td>{{Tues}}</td>
-                  <td>{{Wed}}</td>
-                  <td>{{Thu}}</td>
-                  <td>{{Fri}}</td>
-                  <td>{{Sat}}</td>
-                  
-                  </tr>	
-                  <tr>
-                  <td><div ng-app="app" ng-controller="Ctrl">
-  <a href="#" editable-select="user.status" e-multiple e-ng-options="s.value as s.text for s in statuses">
-    {{ showStatus() }}
-  </a>
-</div></td>
-                  <td>{{pace/2}}</td>
-                  <td>{{Sun}}</td>
-                  <td>{{Mon}}</td>
-                  <td>{{Tues}}</td>
-                  <td>{{Wed}}</td>
-                  <td>{{Thu}}</td>
-                  <td>{{Fri}}</td>
-                  <td>{{Sat}}</td>
-                  </tr>					
+					                  <td><select>
+					  <option value="1hour">1hour</option>
+					  <option value="1hour">2hour</option>
+					  <option value="1hour">3hour</option>
+					  <option value="1hour">4hour</option>
+					  <option value="1hour">5hour</option>
+					  <option value="1hour">6hour</option>
+					  <option value="1hour">7hour</option>
+					</select></td>
+					                  <td><select>
+					  <option value="yes">yes</option>
+					  <option value="no">no</option>
+					  
+					</select></td>
+					                  <td><select>
+					  <option value="yes">yes</option>
+					  <option value="no">no</option>
+					  
+					</select></td>
+					                  <td><select>
+					  <option value="yes">yes</option>
+					  <option value="no">no</option>
+					  
+					</select></td>
+					                  <td><select>
+					  <option value="yes">yes</option>
+					  <option value="no">no</option>
+					  
+					</select></td>
+					                  <td><select>
+					  <option value="yes">yes</option>
+					  <option value="no">no</option>
+					  
+					</select></td>
+					                  <td><select>
+					  <option value="yes">yes</option>
+					  <option value="no">no</option>
+					  
+					</select></td>
+					                  <td><select>
+					  <option value="yes">yes</option>
+					  <option value="no">no</option>
+					  
+					</select></td>
+					                  
+					                  </tr>	
+					                  <tr>
+					                  <td><select>
+					  <option value="1hour">arms</option>
+					  <option value="1hour">legs</option>
+					  <option value="1hour">chest</option>
+					  <option value="1hour">normal</option>
+					  
+					</select></td>
+					                  <td><select>
+					  <option value="1hour">1hour</option>
+					  <option value="1hour">2hour</option>
+					  <option value="1hour">3hour</option>
+					  <option value="1hour">4hour</option>
+					  <option value="1hour">5hour</option>
+					  <option value="1hour">6hour</option>
+					  <option value="1hour">7hour</option>
+					</select></td>
+					                  <td><select>
+					  <option value="yes">yes</option>
+					  <option value="no">no</option>
+					  
+					</select></td>
+					                  <td><select>
+					  <option value="yes">yes</option>
+					  <option value="no">no</option>
+					  
+					</select></td>
+					                  <td><select>
+					  <option value="yes">yes</option>
+					  <option value="no">no</option>
+					  
+					</select></td>
+					                  <td><select>
+					  <option value="yes">yes</option>
+					  <option value="no">no</option>
+					  
+					</select></td>
+					                  <td><select>
+					  <option value="yes">yes</option>
+					  <option value="no">no</option>
+					  
+					</select></td>
+					                  <td><select>
+					  <option value="yes">yes</option>
+					  <option value="no">no</option>
+					  
+					</select></td>
+					                  <td><select>
+					  <option value="yes">yes</option>
+					  <option value="no">no</option>
+					  
+					</select></td>
+					                  </tr>					
               </tbody>
             </table>
           </div>
@@ -113,7 +151,7 @@
           
           </div>
 		</div>
-</div><div class="container content" ng-app="app" ng-controller='schedule' >
+</div><div class="container content" ng-app="app" ng-controller='index' >
   			<div class="panel panel-default">
 			  <div class="panel-heading"><h2>Workouts </h2> </div>
 			  <div class="panel-body">
@@ -129,7 +167,7 @@
                   <th>Workout</th> 
                   <th>Time left</th>
                   <th>Days</th>
-                  
+                  <th>friend</th>
                 </tr>
               </thead>
               <tbody>
@@ -137,6 +175,7 @@
                   <td>{{row.workout}}</td>
                   <td>{{row.pace_time}}</td>
                   <td>{{row.days}}</td>
+                  <td>{{row.friends}}</td>
                   <td>
 					<a title="Edit" class="btn btn-default btn-sm toggle-modal edit" data-target="#myModal" href="?action=edit&id={{row.id}}">
 						<i class="glyphicon glyphicon-pencil"></i>
@@ -165,26 +204,9 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
 </head>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js">
-	
-	
-	
-</script>
+<<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
 		<script type="text/javascript" src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v2.0.0.js"></script>
-		<script type="text/javascript">
-			var phonecatApp = angular.module('phonecatApp', []);
-
-phonecatApp.controller('PhoneListCtrl', function ($scope) {
-  $scope.phones = [
-    {'name': 'Nexus S',
-     'snippet': 'Fast just got faster with Nexus S.'},
-    {'name': 'Motorola XOOM™ with Wi-Fi',
-     'snippet': 'The Next, Next Generation tablet.'},
-    {'name': 'MOTOROLA XOOM™',
-     'snippet': 'The Next, Next Generation tablet.'}
-  ];
-});
-		</script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.4/typeahead.bundle.min.js"></script>
 		<script type="text/javascript">
 			$('.typeahead').typeahead({ },
 			{
@@ -197,34 +219,28 @@ phonecatApp.controller('PhoneListCtrl', function ($scope) {
 			  }
 			});	
 		</script>
+		
+		
 		<script type="text/javascript">
 			var $mContent;
 			var app = angular.module('app', [])
-			.controller('bmiCalculator', function ($scope){
-				$scope.results = function(){
-					return ($scope.weight / ($scope.height * $scope.height)) * 703;
-				};
-			})
-			function schedule($scope) {
-				    {$scope.body =body };
-				    {$scope.pace = pace};
-				    {$scope.Sun =Sun};
-				    {$scope.Mon = Mon};
-				    {$scope.Tues = Tues};
-				    {$scope.Wed = Wed};
-				    {$scope.Thu = Thu};
-				    {$scope.Fri = Fri};
-				    {$scope.Sat = Sat};
-				   				}				
+			
 			.controller('index', function($scope, $http){
+				$scope.showQuickAdd = false;
+				$scope.curRow = null;
+				
 				$http.get('?format=json')
 				.success(function(data){
+					$scope.click = function(row){
+					$scope.curRow = row;
+					$scope.workout ='workout';
+				}
+				}
+					$http.get('?format=json&userId=')
+				.success(function(data){
 					$scope.data = data;
-					$scope.workout = function(){ return workout(data, 'workout'); };
-					$scope.pace_time = function(){ return hours(data, 'pace');  };
-					$scope.days = function(){ return days(data, '');  };
-				});
-					$scope.fiber = sum(data, 'Fiber');
+					
+				
 				});
 				$('body').on('click', ".toggle-modal", function(event){
 					event.preventDefault();
@@ -266,31 +282,12 @@ phonecatApp.controller('PhoneListCtrl', function ($scope) {
 					$socialScope = $scope;
 					$socialScope.$apply();
 			});
-			function hours (data,field) {
-				var hours = 0 ;
-				$.if('pace'== 'Normal')
-				{
-					hours =12;
-			 }
-			 	$.if('pace'== 'FAST')
-				{
-					hours = 15;
-			 }
-			 	$.if('pace' == 'SLOW')
-				{
-					hours =7;
-			 }
-			 	if()
-			 	{
-			 		
-			 	}
-			 
-			}			
+			
 			
 			
 			
 			$(function(){
-				$(".schedule").addClass("active");
+				$(".index").addClass("active");
 								
 				$mContent = $("#myModal .modal-content");
 				var defaultContent = $mContent.html();
@@ -308,4 +305,22 @@ phonecatApp.controller('PhoneListCtrl', function ($scope) {
 
 				
 			});
+			
+			
+			
 		</script>
+		
+		
+		<script type="text/javascript">
+			$('.typeahead').typeahead({ },
+			{
+			  displayKey: 'Name',
+			  source: function(q, callback){
+			  	$.getJSON('?action=search&format=json&q=' + q, function(data){
+			  		callback(data);
+			  	});
+			  	
+			  }
+			});	
+		</script>
+		

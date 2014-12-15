@@ -16,17 +16,16 @@
 				</ul>
   			</div>
   		<? endif; ?>
-
-		  <div class="form-group">
-		    <label for="txtCalories" class="col-sm-2 control-label">foodname</label>
+			 <div class="form-group">
+		    <label for="txtCalories" class="col-sm-2 control-label">friend</label>
 		    <div class="col-sm-10">
-		      <input type="number" class="form-control" id="txtCalories" name="Calories" placeholder="food" value="<?=$model['food']?>">
+		      <input type="text" class="form-control" id="friend" name="friend" placeholder="friend" value="<?=$model['friend']?>">
 		    </div>
 		  </div>
 		  <div class="form-group">
-		    <label for="txtCalories" class="col-sm-2 control-label">food type</label>
+		    <label for="txtCalories" class="col-sm-2 control-label">foodname</label>
 		    <div class="col-sm-10">
-		      <input type="number" class="form-control" id="txtCalories" name="Calories" placeholder="breakfast" value="<?=$model['food_type']?>">
+		      <input type="text" class="form-control" id="food" name="food" placeholder="food" value="<?=$model['food']?>">
 		    </div>
 		  </div>
 		 

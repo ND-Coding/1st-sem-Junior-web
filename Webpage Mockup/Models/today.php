@@ -7,7 +7,7 @@ class Today {
 	
 	public static function Get($id=null)
 	{
-		$sql = "	SELECT * FROM user_food
+		$sql = "	SELECT * FROM `user_food`
 		";
 		if($id){
 			$sql .= " WHERE id=$id ";
@@ -32,7 +32,7 @@ static public function Save(&$row)
 			$row2['time'] = date( 'Y-m-d H:i:s', strtotime( $row2['time'] ) );
 			if (!empty($row['id'])) {
 				$sql = "	UPDATE user_food 
-							SET `created_at`=[value-2],`updated_at`=[value-3],`food`='$row2[food]',`food type`='$row2[food_type]',
+							SET `created_at`=,`updated_at`=[value-3],`food`='$row2[food]',`food type`='$row2[food_type]',
 							`calories`='$row2[calories]',`fat`='$row2[fat]',`fiber`='$row2[fiber]',`carbs`='$row2[carbs]', time='$row2[time]';				'
 						WHERE id = $row2[id] 
 						";
@@ -40,6 +40,11 @@ static public function Save(&$row)
 				$sql = "INSERT INTO user_food
 				(`created_at`, `updated_at`, `food`, `food type`, `calories`, `fat`, `fiber`, `carbs`) 
 				VALUES '$row2[time]',Now(), '$row2[food]','$row2[food_type]','$row2[calories]','$row2[fat]','$row2[fiber]','$row2[carbs]')";				
+				$sql ="
+				INSERT INTO `friends`(`friend`) VALUES ('$row2[friend]')
+				
+				";
+			
 			}
 			
 			
@@ -56,6 +61,14 @@ static public function Save(&$row)
 			
 			return $error ? array ('sql error' => $error) : false;
 		}
+public static function Search($q)
+	{
+		$sql = "	SELECT * FROM `user_food` WHERE 1
+					
+					WHERE food LIKE '%$q%'
+		";
+		return FetchAll($sql);			
+	}
 
 
 
@@ -75,12 +88,7 @@ static public function Save(&$row)
 		{
 			$errors = array();
 			
-			if(empty($row['food'])) $errors['food'] = "is required";
-			if(empty($row['food_type'])) $errors['food_type'] = "is required";
-			if(empty($row['calories'])) $errors['calories'] = "is required";
-			if(empty($row['fat'])) $errors['fat'] = "is required";
-			if(empty($row['fiber'])) $errors['fiber'] = "is required";
-			if(empty($row['carbs'])) $errors['carbs'] = "is required";			
+			
 
 			//if(empty($row['Name'])) $errors['Name'] = "is required";
 			//if(empty($row['Calories'])) $errors['Calories'] = "is required";

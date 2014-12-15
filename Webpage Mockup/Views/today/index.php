@@ -15,18 +15,6 @@
   		
   	<h1>Today</h1>
   	
-  	<div class="input-group">
-    				<span class="input-group-addon"> 
-							<input type="radio" ng-model="body"value="ARMS">ARMS
-							<input type="radio" ng-model="body"value="LEGS">LEGS
-							<input type="radio" ng-model="body" value="CHEST">CHEST
-					</span></div>
-	<div class="input-group">
-    							<span class="input-group-addon"> 
-							    <input type="radio" ng-model="height"value="ARMS">ARMS
-							<input type="radio" ng-model="body"value="LEGS">LEGS
-							<input type="radio" ng-model="body" value="CHEST">CHEST
-					</span></div>				
 		  <div class="panel panel-default">
 			  <div class="panel-heading"><h2>Recomended Daily Food Intake</h2> </div>
 			  <div class="panel-body">
@@ -43,20 +31,20 @@
               <tbody>
               	<tr >
               		<td>Breakfast</td>
-              			<td>{{Calories/3}}</td>
-                  		<td>{{Fat/3}}</td>
+              			<td>200</td>
+                  		<td>30</td>
               		</tr>
               		<td>Lunch</td>
-	              		<td>{{Calories/3}}</td>
-	                  	<td>{{Fat/3}}</td>
+	              		<td>300</td>
+	                  	<td>50</td>
                   </tr>
               		<td>Dinner</td>
-	              		<td>{{Calories/3}}</td>
-	                  	<td>{{Fat/3}}</td>
+	              		<td>300</td>
+	                  	<td>30</td>
 	                  </tr>
               		<td>Snack</td>
-	              		<td>{Calories/3}}</td>
-	                  	<td>{{Fat/3}}</td>
+	              		<td>50</td>
+	                  	<td>10</td>
               		 </tr>
                
                   
@@ -116,18 +104,19 @@
                   <th>Carbs (g)</th>
                   <th>Fiber (g)</th>
                   <th>Time</th>
-                  <th></th>
+                  <th>Friend</th>
                 </tr>
               </thead>
               <tbody>
                <tr ng-repeat='row in data'>
-                  <td>{{row.Name}}</td>
-                  <td>{{row.T_Name}}</td>
-                  <td>{{row.Calories}}</td>
-                  <td>{{row.Fat}}</td>
-                  <td>{{row.Carbs}}</td>
-                  <td>{{row.Fiber}}</td>
+                  <td>{{row.food}}</td>
+                  <td>{{row.food_type}}</td>
+                  <td>{{row.calories}}</td>
+                  <td>{{row.fat}}</td>
+                  <td>{{row.carbs}}</td>
+                  <td>{{row.fiber}}</td>
                   <td>{{row.Time}}</td>
+                  <td>{{row.friend}}</td>
                   <td>
 					<a ng-click="click(row)" title="Edit" class="btn btn-default btn-sm toggle-modal edit" data-target="#myModal" href="?action=edit&id={{row.id}}">
 						<i class="glyphicon glyphicon-pencil"></i>
@@ -161,7 +150,7 @@
                 </tr>
               </thead>
               <tbody>
-               <tr ng-repeat='row in data'>
+               <tr>
                   <td><a href="https://www.youtube.com/watch?v=jltN3fLFmTQ">"i" by Kendrick Lamar</a>  </td>
                   <td><a href="https://www.youtube.com/watch?v=k4YRWT_Aldo">"7/11" by Beyonce</a></td>
                   <td><a href="https://www.youtube.com/watch?v=h4ZyuULy9zs">“Strange Fruit” by Billie Holiday</a></td>
@@ -194,3 +183,97 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
 </head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+		<script type="text/javascript" src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v2.0.0.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.4/typeahead.bundle.min.js"></script>
+		<script type="text/javascript">
+			$('.typeahead').typeahead({ },
+			{
+			  displayKey: 'Name',
+			  source: function(q, callback){
+			  	$.getJSON('?action=search&format=json&q=' + q, function(data){
+			  		callback(data);
+			  	});
+			  	
+			  }
+			});	
+		</script>
+		
+		
+		<script type="text/javascript">
+			var $mContent;
+			var app = angular.module('app', [])
+			
+			.controller('index', function($scope, $http){
+				$scope.showQuickAdd = false;
+				$scope.curRow = null;
+				$scope.click = function(row){
+					$scope.curRow = row;
+				}
+				
+				$http.get('?format=json&userId=')
+				.success(function(data){
+					$scope.data = data;
+					
+				});
+				
+				$('body').on('click', ".toggle-modal", function(event){
+					event.preventDefault();
+					var $btn = $(this);
+					MyFormDialog(this.href, function (data) {
+						$("#myAlert").show().find('div').html(JSON.stringify(data));
+						
+						if($btn.hasClass('edit')){
+							$scope.data[$scope.data.indexOf($scope.curRow)] = data;
+						}
+						if($btn.hasClass('add')){
+							$scope.data.push(data);							
+						}
+						if($btn.hasClass('delete')){
+							$scope.data.splice($scope.data.indexOf($scope.curRow), 1);					
+						}
+						$scope.$apply();
+					})								
+				})
+			});
+			
+			
+			function MyFormDialog (url, then /*callback when the form is submitted*/) {
+			  	$("#myModal").modal("show");
+			  	$.get(url + "&format=plain", function(data){
+					$mContent.html(data);
+					$mContent.find('form')
+					.on('submit', function(e){
+						e.preventDefault();
+						$("#myModal").modal("hide");
+						
+						$.post(this.action + '&format=json', $(this).serialize(), function(data){
+							then(data);
+						}, 'json');
+					});
+				});
+			}				
+			
+			
+			
+			
+			
+			$(function(){
+				$(".today").addClass("active");
+								
+				$mContent = $("#myModal .modal-content");
+				var defaultContent = $mContent.html();
+				
+				
+								
+				$('#myModal').on('hidden.bs.modal', function (e) {
+					$mContent.html(defaultContent);
+				    
+				})
+				
+				$('.alert .close').on('click',function(e){
+					$(this).closest('.alert').slideUp();
+				});
+				
+			});
+		</script>
