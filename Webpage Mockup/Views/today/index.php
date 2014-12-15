@@ -10,9 +10,11 @@
   
   
 
-  <body>
+
   	<div class="container content col-md" ng-app="app" ng-controller='index' >
+  		
   	<h1>Today</h1>
+  	
   	<div class="input-group">
     				<span class="input-group-addon"> 
 							<input type="radio" ng-model="body"value="ARMS">ARMS
@@ -76,6 +78,10 @@
 						     <div class="col-md" ng-show="showQuickAdd">
 					<input type="text" class="typeahead form-control" placeholder="Saved Foods" />
 				</div>
+				<a class="btn btn-success toggle-modal add" data-target="#myModal" href="?action=create">
+		<i class="glyphicon glyphicon-plus"></i>
+		Add
+	</a>
 				</div>
 				<div class="row" >
 					<div class="col-sm-8">

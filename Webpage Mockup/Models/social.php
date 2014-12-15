@@ -7,7 +7,7 @@ class social {
 	
 	public static function Get($id=null)
 	{
-		$sql = "	SELECT * FROM user
+		$sql = "	SELECT * FROM pics
 		";
 		if($id){
 			$sql .= " WHERE id=$id ";
@@ -19,7 +19,7 @@ class social {
 	}	
 	public static function Blank()
 	{
-		return array("before"=>"$row2[before]","after"=>"$row2[after]"
+		return array('before'=>null,'after'=>null
 						);
 	}
 
@@ -29,14 +29,13 @@ static public function Save(&$row)
 			
 			$row2 = escape_all($row, $conn);
 			if (!empty($row['id'])) {
-				$sql = "Update user
-							Set before='$row2[before]', after='$row2[after];				'
-						WHERE id = $row2[id]
+				$sql = "Update pics
+							Set before='$row2[before]', after='$row2[after]';
+						WHERE id = $row2[id];
 						";
 			}else{
-				$sql = "INSERT INTO user
-						(before,after )
-						VALUES ( '$row2[before]', '$row2[after]' ) ";				
+				$sql = 
+				"INSERT INTO `pics`(`before`, `after`) VALUES ('$row2[before]', '$row2[after]')";				
 			}
 			
 			
@@ -59,7 +58,7 @@ static public function Save(&$row)
 	static public function Delete($id)
 		{
 			$conn = GetConnection();
-			$sql = "DELETE FROM user WHERE id = $id";
+			$sql = "DELETE FROM pics WHERE id = $id";
 			//echo $sql;
 			$results = $conn->query($sql);
 			$error = $conn->error;

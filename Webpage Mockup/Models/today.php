@@ -7,7 +7,7 @@ class Today {
 	
 	public static function Get($id=null)
 	{
-		$sql = "	SELECT * FROM user
+		$sql = "	SELECT * FROM user_food
 		";
 		if($id){
 			$sql .= " WHERE id=$id ";
@@ -20,9 +20,7 @@ class Today {
 
 	public static function Blank()
 	{
-		return array('username'=>null, 'password'=>null,',pace'=>null,'email'=>null,'phonenum'=>null
-							,'weight'=>null,'sunday'=>'no','monday'=>'no','tuesday'=>'no',
-						'wednesday'=>'no','thursday'=>'no','friday'=>'no','saturday'=>'no','fullname'=>null, 'cheatfood'=>null
+		return array('food'=>null, 'food type'=>null,'calories'=>null,'fat'=>null,'fiber'=>null,'carbs'=>null,'time'=>date(strtotime('tomorrow'))
 						);
 	}
 
@@ -31,19 +29,17 @@ static public function Save(&$row)
 			$conn = GetConnection();
 			
 			$row2 = escape_all($row, $conn);
-			//$row2['Time'] = date( 'Y-m-d H:i:s', strtotime( $row2['Time'] ) );
+			$row2['time'] = date( 'Y-m-d H:i:s', strtotime( $row2['time'] ) );
 			if (!empty($row['id'])) {
-				$sql = "Update user
-							Set username='$row2[username]', password='$row2[password]',pace = '$row2[pace]',email = '$row2[email]',phonenum='$row2[phonenum]'
-							,weight='$row2[weight]',sunday='$row2[sunday]',monday='$row2[monday]',tuesday='$row2[tuesday]',
-						wednesday='$row2[wednesday]',thursday='$row2[thursday]',friday='$row2[friday]',saturday='$row2[saturday]',fullname'$row2[fullname];				'
-						WHERE id = $row2[id]
+				$sql = "	UPDATE user_food 
+							SET `created_at`=[value-2],`updated_at`=[value-3],`food`='$row2[food]',`food type`='$row2[food_type]',
+							`calories`='$row2[calories]',`fat`='$row2[fat]',`fiber`='$row2[fiber]',`carbs`='$row2[carbs]', time='$row2[time]';				'
+						WHERE id = $row2[id] 
 						";
 			}else{
-				$sql = "INSERT INTO user
-						(username,password ,created_at ,pace ,email ,phonenum ,weight,sunday,monday,tuesday,wednesday,thursday, friday, saturday,fullname )
-						VALUES ( '$row2[username]', '$row2[password]', Now(),'$row2[pace]','$row2[email]','$row2[phonenum]','$row2[weight]','$row2[sunday]','$row2[monday]','$row2[tuesday]',
-						'$row2[wednesday]','$row2[thursday]','$row2[friday]','$row2[saturday]','$row2[fullname]'  ) ";				
+				$sql = "INSERT INTO user_food
+				(`created_at`, `updated_at`, `food`, `food type`, `calories`, `fat`, `fiber`, `carbs`) 
+				VALUES '$row2[time]',Now(), '$row2[food]','$row2[food_type]','$row2[calories]','$row2[fat]','$row2[fiber]','$row2[carbs]')";				
 			}
 			
 			
@@ -78,7 +74,14 @@ static public function Save(&$row)
 	static public function Validate($row)
 		{
 			$errors = array();
-			if(empty($row['username'])) $errors['username'] = "is required";
+			
+			if(empty($row['food'])) $errors['food'] = "is required";
+			if(empty($row['food_type'])) $errors['food_type'] = "is required";
+			if(empty($row['calories'])) $errors['calories'] = "is required";
+			if(empty($row['fat'])) $errors['fat'] = "is required";
+			if(empty($row['fiber'])) $errors['fiber'] = "is required";
+			if(empty($row['carbs'])) $errors['carbs'] = "is required";			
+
 			//if(empty($row['Name'])) $errors['Name'] = "is required";
 			//if(empty($row['Calories'])) $errors['Calories'] = "is required";
 			

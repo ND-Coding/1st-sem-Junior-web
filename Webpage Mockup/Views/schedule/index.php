@@ -6,14 +6,20 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 </head>
-<body
+
 <div class="container"><h1>Here is your workout schedule  </h1>	</div> 
      
-<div class="container content" ng-app="app" ng-controller='schedule' >
+<div class="container content" ng-app="app" ng-controller='index' >
   			<div class="panel panel-default">
 			  <div class="panel-heading"><h2>Workout schedule</h2> </div>
 			  <div class="panel-body">
-			  	
+			  	<div class="well" ng-controller="bmiCalculator" >
+				<input type="text" ng-model='height' class="form-control" placeholder="Your Height (in)" />
+				<input type="text" ng-model='weight'  class="form-control" placeholder="Your Weight" />
+				<div class="alert alert-success">
+					Your BMI: {{ results() }}
+				</div>
+			</div>
 			  	<label >Focus on this or these parts of my body during workouts</label><br>
 							   <div class="input-group">
     							<span class="input-group-addon"> 
@@ -47,6 +53,16 @@
 			  <div class="table-responsive">
             <table class="table table-striped">
               <thead>
+              	<body ng-controller="PhoneListCtrl">
+
+  <ul>
+    <li ng-repeat="phone in phones">
+      <span>{{phone.name}}</span>
+      <p>{{phone.snippet}}</p>
+    </li>
+  </ul>
+
+</body>
                 <tr>
                   <th>Workout</th> 
                   <th>Time</th>
@@ -73,7 +89,11 @@
                   
                   </tr>	
                   <tr>
-                  <td>{{body}}</td>
+                  <td><div ng-app="app" ng-controller="Ctrl">
+  <a href="#" editable-select="user.status" e-multiple e-ng-options="s.value as s.text for s in statuses">
+    {{ showStatus() }}
+  </a>
+</div></td>
                   <td>{{pace/2}}</td>
                   <td>{{Sun}}</td>
                   <td>{{Mon}}</td>
@@ -134,7 +154,7 @@
          
 </div></div>
           
-          </body>
+          
   <meta name="description" content="">
   <meta name="author" content="Nathan Dalling">
 
@@ -145,11 +165,46 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
 </head>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js">
+	
+	
+	
+</script>
 		<script type="text/javascript" src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v2.0.0.js"></script>
+		<script type="text/javascript">
+			var phonecatApp = angular.module('phonecatApp', []);
+
+phonecatApp.controller('PhoneListCtrl', function ($scope) {
+  $scope.phones = [
+    {'name': 'Nexus S',
+     'snippet': 'Fast just got faster with Nexus S.'},
+    {'name': 'Motorola XOOM™ with Wi-Fi',
+     'snippet': 'The Next, Next Generation tablet.'},
+    {'name': 'MOTOROLA XOOM™',
+     'snippet': 'The Next, Next Generation tablet.'}
+  ];
+});
+		</script>
+		<script type="text/javascript">
+			$('.typeahead').typeahead({ },
+			{
+			  displayKey: 'Name',
+			  source: function(q, callback){
+			  	$.getJSON('?action=search&format=json&q=' + q, function(data){
+			  		callback(data);
+			  	});
+			  	
+			  }
+			});	
+		</script>
 		<script type="text/javascript">
 			var $mContent;
 			var app = angular.module('app', [])
+			.controller('bmiCalculator', function ($scope){
+				$scope.results = function(){
+					return ($scope.weight / ($scope.height * $scope.height)) * 703;
+				};
+			})
 			function schedule($scope) {
 				    {$scope.body =body };
 				    {$scope.pace = pace};
