@@ -105,8 +105,10 @@
 						<li class="dropdown">
 				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="glyphicon glyphicon-globe"></i> Projects <span class="caret"></span></a>
 				          <ul class="dropdown-menu" role="menu">
-				           <li ><a  href="http://cs.newpaltz.edu/~dallingn1/2014fall/Webpage%20Mockup/Controllers/register.php"><i class="glyphicon glyphicon-tint"></i> Fitness Tracker</a></li>
-				         <!--
+				           <li> ..None avaible for viewing now</li>
+				           
+				           
+				           				         <!--
 				         	<li> 
 				         	<a class="toggle-modal add" data-target="#myMoney" data-toggle="modal">
 														<i class="glyphicon glyphicon-usd"></i>
@@ -217,11 +219,15 @@
 														<i class="glyphicon glyphicon-thumbs-up"></i>
 														Facebook
 													</a></li>
+													<li ><a class="btn btn-primary btn-lg" href="http://cs.newpaltz.edu/~dallingn1/2014fall/projects/projectmain.php#">
+														<i class="glyphicon glyphicon-thumbs-up"></i>
+														Projects
+													</a></li>
+
 											  		<li class="dropdown">
 											          <a href="#" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="glyphicon glyphicon-globe"></i> Projects <span class="caret"></span></a>
 											          <ul class="dropdown-menu" role="menu">
-											           <li ><a  href="http://cs.newpaltz.edu/~dallingn1/2014fall/Webpage%20Mockup/Controllers/register.php"><i class="glyphicon glyphicon-tint"></i> Fitness Tracker</a></li>
-											        
+											           none avaible to the public											        
 											          </ul>
 											        </li>
 											  	</ul>
