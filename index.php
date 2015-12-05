@@ -74,7 +74,7 @@
 		}
 		</style>
 		
-			<nav class="navbar  navbar-inverse navbar-fixed-top" role="navigation" color="blue">
+			<nav class="navbar  navbar-inverse" role="navigation" color="blue">
 				  <div class="container-fluid" >
 				    <!-- Brand and toggle get grouped for better mobile display -->
 				    <div class="navbar-header">
@@ -98,10 +98,10 @@
 				        <li class="active"><a href="#educate"><i class="glyphicon glyphicon-star"></i> Education<span class="sr-only"></span></a></li>
 				        <li ><a href="#work"> <i class="glyphicon glyphicon-list-alt"></i> Work Experience<span class="sr-only"></span></a></li>
 				        <li ><a href="#skills"> <i class="glyphicon glyphicon-th-list"></i> Skills<span class="sr-only"></span></a></li>
-				       <li><a  href="https://github.com/n02723913"><i class="glyphicon glyphicon-book"></i> GitHub</a></li>
+				       <li><a  href="https://github.com/n02723913" target="_blank"><i class="glyphicon glyphicon-book"></i> GitHub</a></li>
 						<li ><a class="toggle-modal add" data-target="#myModal" data-toggle="modal"><i class="glyphicon glyphicon-user"></i> References</a></li>
-						<li ><a href="https://www.linkedin.com/profile/view?id=419615847&trk=nav_responsive_tab_profile"><i class="glyphicon glyphicon-briefcase"></i> LinkedIn</a></li>
-						<li ><a  href="https://www.facebook.com/nathan.dalling"><i class="glyphicon glyphicon-thumbs-up"></i> Facebook</a></li>
+						<li ><a href="https://www.linkedin.com/profile/view?id=419615847&trk=nav_responsive_tab_profile"target="_blank"><i class="glyphicon glyphicon-briefcase"></i> LinkedIn</a></li>
+						<li ><a  href="https://www.facebook.com/nathan.dalling"target="_blank"><i class="glyphicon glyphicon-thumbs-up"></i> Facebook</a></li>
 						<li class="dropdown">
 				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="glyphicon glyphicon-globe"></i> Projects <span class="caret"></span></a>
 				          <ul class="dropdown-menu" role="menu">
@@ -201,7 +201,7 @@
 											  	
 											  	<nav class="bs-doc-slidebar hidden-print hidden-xs hidden-sm affix-top">
 											  	<ul class="nav bs-doc-slidenav ">   
-											  		<li ><a class="btn btn-primary btn-lg" href="https://github.com/n02723913"><i class="glyphicon glyphicon-book"></i>
+											  		<li ><a class="btn btn-primary btn-lg" href="https://github.com/n02723913"target="_blank"><i class="glyphicon glyphicon-book"></i>
 															GitHub
 													</a>	
 													</li>
@@ -210,16 +210,16 @@
 														References
 													</a></li>
 													
-											  		<li ><a class="btn btn-primary btn-lg" href="https://www.linkedin.com/profile/view?id=419615847&trk=nav_responsive_tab_profile">
+											  		<li ><a class="btn btn-primary btn-lg" href="https://www.linkedin.com/profile/view?id=419615847&trk=nav_responsive_tab_profile"target="_blank">
 														<i class="glyphicon glyphicon-briefcase"></i>
 														LinkedIn
 													</a></li>
 											  		
-											  		<li ><a class="btn btn-primary btn-lg" href="https://www.facebook.com/nathan.dalling">
+											  		<li ><a class="btn btn-primary btn-lg" href="https://www.facebook.com/nathan.dalling"target="_blank">
 														<i class="glyphicon glyphicon-thumbs-up"></i>
 														Facebook
 													</a></li>
-													<li ><a class="btn btn-primary btn-lg" href="http://cs.newpaltz.edu/~dallingn1/2014fall/projects/projectmain.php#">
+													<li ><a class="btn btn-primary btn-lg" href="http://cs.newpaltz.edu/~dallingn1/2014fall/projects/projectmain.php#"target="_blank">
 														<i class="glyphicon glyphicon-thumbs-up"></i>
 														Projects
 													</a></li>
@@ -245,6 +245,31 @@
 											  </nav>
 										  
 										  <div class= "col-md-9">
+										  	<section id="skills">
+											
+											  	
+											  <h2  id="skills">Skills</h2>
+											  <p>- Web Programing</p>
+											  <p>- Object Oriented Programing</p>
+											  <p>- SQL database programing</p>
+											  <p>- GUI Programing</p>
+											  <p>- Github Experience</p>
+											  <p>- PHP programing</p>
+											  <p>- Javascript Programing</p>
+											  <p>- JQuerry progarming</p>
+											  <p>- Bootstrap Experience</p>
+											  <p>- Command line </p>
+											  <p>- Java, Python and C++ Coding</p>
+											  <p>- Mircocoding and Assembly Language Knowledge </p>
+											  <p>- Computer Troubleshooting</p>
+											  <p>- Microsoft Word , PowerPoint and Excel Experience</p>
+											  <p>- Office Organization </p>
+											  
+											  <p>- Customer Service</p>
+											  <p>- Team work</p>
+											  
+											  
+									  		</section>
 											  <section id ="educate">
 											  	
 											  		<h2 >Education</h2>
@@ -255,6 +280,9 @@
 											  		 	<p>- Completed 4th semester of college and achieved 64 credits </p>
 											  		 	<p>- Computer Science Major</p>
 											  		 	<p>- GPA 3.2</p>
+											  		 <h3>Web Programing Spring 2014</h3>
+											  		 	<p>- SUNY New Paltz Computer Science class</p>
+											  		 	<p>- Professor Moshe Plotkin</p>
 											  
 											  </section>
 											  <section id="work">
@@ -282,37 +310,11 @@
 											  		 
 											  </p>
 											  </section>
-											  <section id="skills">
-											
-											  	
-											  <h2  id="skills">Skills</h2>
-											  <p>- Web Programing</p>
-											  <p>- Object Oriented Programing</p>
-											  <p>- SQL database programing</p>
-											  <p>- GUI Programing</p>
-											  <p>- Github Experience</p>
-											  <p>- PHP programing</p>
-											  <p>- Javascript Programing</p>
-											  <p>- JQuerry progarming</p>
-											  <p>- Bootstrap Experience</p>
-											  <p>- Command line </p>
-											  <p>- Java, Python and C++ Coding</p>
-											  <p>- Mircocoding and Assembly Language Knowledge </p>
-											  <p>- Computer Troubleshooting</p>
-											  <p>- Microsoft Word , PowerPoint and Excel Experience</p>
-											  <p>- Office Organization </p>
 											  
-											  <p>- Customer Service</p>
-											  <p>- Team work</p>
-											  
-											  
-									  		</section>
 									  	</div>
 								  </div>
 					
-  
-			
-				<div class="modal fade" id="myModal"tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">>
+  <div class="modal fade" id="myModal"tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">>
 							  <div class="modal-dialog">
 							    <div class="modal-content">
 							      <div class="modal-header">
@@ -344,6 +346,7 @@
 							    </div><!-- /.modal-content -->
 							  </div><!-- /.modal-dialog -->
 							</div><!-- /.modal -->
+			
 										
 			<div class="modal fade" id="myMoney"tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-app="myApp"  ng-init="expense=1; dollar=1; hour=1; shopping=0">
 							  <div class="modal-dialog modal-lg">

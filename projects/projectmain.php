@@ -36,7 +36,7 @@
 								<p>Natnan Dalling's offical resume website</p>
 								<p>By Nathan Dalling</p></a>
 								</li>
-							<li><a  href="http://cs.newpaltz.edu/~dallingn1/2014fall/projects/SE/predraft.php"><i class="glyphicon glyphicon-book btn-lg"></i> Mechanic comunication Website
+							<li><a  href="http://cs.newpaltz.edu/~dallingn1/2014fall/projects/SE/home.php"><i class="glyphicon glyphicon-book btn-lg"></i> Mechanic comunication Website
 								<p>Details:</p>
 								<p>A website used for recomending cars to customers via communication system between clinet and customers. The recomendations would be based of customers hobbies , prefences and lifestyle </p>
 								<p>By :Team:team(Patrick Ford,Jacob Bender and Nathan Dalling)</p></a>

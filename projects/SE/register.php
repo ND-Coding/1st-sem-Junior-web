@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 	<head>
 		  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 		  
 		<meta charset="utf-8">
-		<title>Nathan Dalling Resume:</title>
+		<title>Insert company name here Beta</title>
 		<link href="assets/css/bootstrap.css" rel="stylesheet">
 		<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 		<link href="assets/css/docs.css" rel="stylesheet">
@@ -16,11 +16,31 @@
 		<link rel="stylesheet" href="../content/css/main.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	
 	</head>
 
+ <header><h1>Please register</h1></header>
  
+
 	<body>
-		
+		<div class="container">
+    <p class="navbar-text navbar-center"><a href="home.php" class="navbar-link"> BACK HOME</a></p>
+  </div>
+
+		<div class="container-fluid center ">
+			<form>
+				Full Name : <input type= "type" name="full name"/> <br>
+    		Email :<input type="text" name="email"/><br>
+    
+           Password :<input type="text" name="password"/><br>
+				<input type="submit" name="submit" id="submit" value="Submit" />
+			</form>
+			 
+			
+			
+			
+			
+		</div>
 		
 	
 	</body>
