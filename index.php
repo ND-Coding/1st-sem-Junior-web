@@ -147,7 +147,7 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
       <div class="col-lg-2"></div>
       <div class="col-lg-8">
         <img src="http://cdn.evbuc.com/images/1278999/26756663683/1/logo.gif" >
-        <h4 style="color: white;">Nathan Dalling<br />Software Engineer & Web Developer <br/>NSBE Member</h4>
+        <h4 style="color: white;">Nathan Dalling<br />Software Engineer & Web Developer <br/>SUNY New Paltz NSBE Vice President Spring 2017</h4>
       </div>
       <div class="col-lg-2">
       </div>
@@ -175,7 +175,7 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
                     
                        
                     <div class="item">
-                        <h4>Phone Number: 914-525-9268   Email:Nathandall@aol.com </h4> 						<br/> 						
+                        <h4>Phone Number: 914-525-9268  Email: Nathandall@aol.com </h4> 						<br/> 						
                         <ul class="list-inline banner-social-buttons">
                         
                         <li>
@@ -213,7 +213,17 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
       <hr>
       <br>
       <br>
-    <div class="col-lg-4 service-line">
+    <div class="col-lg-3 service-line">
+      <img src="https://image.freepik.com/free-icon/assistance_318-103676.jpg">
+      <h3>Webpage Programmer</h3>
+      <h4>May 2016 - Present</h4>
+	  <h4>Worked from home</h4>
+      <br>
+      <p class="hideme">- Making websites for K9 Elements creator Valieie Doza .<br />
+	  - Project used Html, Javascript, and CSS. <br/>
+	  - Website still in progress </p>
+    </div><!-- /col-lg-3 -->
+    <div class="col-lg-3 service-line">
       <img src="https://image.freepik.com/free-icon/assistance_318-103676.jpg">
       <h3>Bus Boy</h3>
       <h4>May 2015 - August 2015</h4>
@@ -224,7 +234,7 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
 	  - Oganized and cleaned  work space.</p>
     </div><!-- /col-lg-3 -->
     
-    <div class="col-lg-4 service-line">
+    <div class="col-lg-3 service-line">
       <img src="https://image.freepik.com/free-icon/businessman_318-72886.jpg">
       <h3>Office Assistant</h3>
       <h4>June 2010 – June 2012, May 2015 - August 2015</h4>
@@ -237,7 +247,7 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
 	- Sorted and distributed incoming mail to staff members</p>
     </div><!-- /col-lg-3 -->
 
-    <div class="col-lg-4 service-line">
+    <div class="col-lg-3 service-line">
       <img src="https://image.freepik.com/free-icon/call-center-assistant_318-73238.png">
       <h3>Office Assistant</h3>
       <h4>October 2013 - December 2013</h4>
@@ -261,7 +271,7 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
         <hr />				
 											  		<h2>SUNY New Paltz 2014 - Present</h2>
 											  		 	<p class="hideme">- Computer Science Major <br/>
-											  		 	- Completed 6th semester of college and achieved 92 credits</p>
+											  		 	- Completed 6th semester of college and achieved 116 credits</p>
 											  		 	
 											  		 	<br />
 											  		 <h2>Iona College 2012 - 2014</h2>
@@ -281,9 +291,23 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
 											  		 <h2>Software Engineering Fall 2015</h2>
 											  		 	<p class="hideme">- SUNY New Paltz Computer Science class<br />
 											  		 	- Professor Atul Kumar (Worked at IBM)<br />
-											  		 	- 4 credit class challenged a small group of students to make a website for a client<<br />
+											  		 	- 4 credit class challenged a small group of students to make a website for a client<br />
 											  		 	- At the end Team project turned into a solo independent project – <a href="#project">Private Messager Website</a></p>
-											  		 	<br />								
+											  		 	<br />
+											  		 <h2>Computer Aided Design 1 and 2 Fall 2016 - Spring 2017</h2>
+											  		 <p class="hideme">- SUNY New Paltz Computer Science class<br />
+											  		 	- Micheal Gayk<br />
+											  		 	- 4 credit class studied 3d modeling an printing techniques<br />
+											  		 	- Rhino3d , Rhinoscript and Fusion360 </p>
+							
+											  		 <br />	
+											  		 <h2>Embeded Linux Spring 2017</h2>	
+											  		 <p class="hideme">- SUNY New Paltz Computer Science class<br />
+											  		 	- Professor Eastwarean<br />
+											  		 	- 4 credit class utilized a raspberry pi record data and operate <br />
+											  		 	- Team project TBA</p>
+											  		 	<br />
+											  		 <br />						
       </div><!-- col-lg-6 -->
   </div><!-- container -->  
   
@@ -401,12 +425,14 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
                         <div id="collapseThree" class="accordion-body collapse in">
                           <br>
                             <div class="accordion-inner">
-                             <p class="hideme col-sm-3" >- Java</p>
+                             <p class="hideme col-sm-3" >- Java </p>
                              <p class="hideme col-sm-3" >- Python </p>
                              <p class="hideme col-sm-3" >- C++ </p>
                              
 											  <p class="hideme col-sm-3" >- Mircocoding  </p>
 											  <p class="hideme col-sm-3" >- Assembly  </p>
+											  <p class="hideme col-sm-3" >- RhinoScript </p>
+											  <p class="hideme col-sm-3" >- Mircocoding  </p>
                 </div><!-- /accordion-inner -->
                         </div><!-- /collapse -->
                     </div><!-- /accordion-group -->
