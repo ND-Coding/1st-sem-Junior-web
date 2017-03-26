@@ -7,7 +7,7 @@ class social_posting {
 	
 	public static function Get($id=null)
 	{
-		$sql = "	SELECT * FROM user
+		$sql = "	SELECT * FROM 2014Fall_Food_Eaten
 		";
 		if($id){
 			$sql .= " WHERE id=$id ";
