@@ -147,7 +147,7 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
       <div class="col-lg-2"></div>
       <div class="col-lg-8">
         <img src="http://cdn.evbuc.com/images/1278999/26756663683/1/logo.gif" >
-        <h4 style="color: white;">Nathan Dallinng<br />Software Engineer & Web Developer <br/>SUNY New Paltz NSBE Vice-President Spring 2017</h4>
+        <h4 style="color: white;">Nathan Dalling<br />Software Engineer & Web Developer <br/>SUNY New Paltz NSBE Vice-President Spring 2017</h4>
       </div>
       <div class="col-lg-2">
       </div>
