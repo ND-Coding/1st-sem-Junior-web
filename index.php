@@ -59,6 +59,8 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
+p.hideme2{
+			text-align: center;}
 </style>
 <link rel='stylesheet' id='edd-styles-css'  href='http://gentsthemes.com/wp-content/themes/gents/edd_templates/edd.css?ver=2.4.7' type='text/css' media='all' />
 <link rel='stylesheet' id='bootstrap-css'  href='http://gentsthemes.com/wp-content/themes/gents/css/bootstrap.min.css?ver=3.0.2' type='text/css' media='all' />
@@ -128,7 +130,7 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
           </div><!-- /gn-scroller -->
         </nav>
       </li>
-      <li class="green"><a href="https://drive.google.com/file/d/0ByxN6gg7uWrHbnhKV0tmVmgxTTQ/view?usp=sharing" target="_blank">Nathan Dalling Word Resume</a></li>
+      <li class="green"><a href="https://docs.google.com/document/d/1bO87DaIHg47fB5x7gth38CazT2xkInD4wSJIqmhj7oE/edit?usp=sharing" target="_blank">Nathan Dalling Word Resume</a></li>
     </ul>
   </div><!-- /container -->          
 </nav>
@@ -147,7 +149,7 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
       <div class="col-lg-2"></div>
       <div class="col-lg-8">
         <img src="http://cdn.evbuc.com/images/1278999/26756663683/1/logo.gif" >
-        <h4 style="color: white;">Nathan Dalling<br />Software Engineer & Web Developer <br/>SUNY New Paltz NSBE Vice-President Spring 2017</h4>
+        <h4 style="color: white;">Nathan Dallinng<br />Software Engineer & Web Developer <br/>SUNY New Paltz NSBE Vice-President Spring 2017</h4>
       </div>
       <div class="col-lg-2">
       </div>
@@ -208,56 +210,102 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
   
   <!-- ABOUT SECTION -->
   <section id="work" name="services"></section>
-  <div class="container services">
+  <div class="container services" >
       <h3>Work experience</h3>
       <hr>
       <br>
       <br>
-    <div class="col-lg-3 service-line">
+    <div class="col-lg-3 col-md-12 service-line">
       <img src="https://image.freepik.com/free-icon/assistance_318-103676.jpg">
-      <h3>Webpage Programmer</h3>
+      <h3>Junior Technician</h3>
+      <h4>August 2017 - December 2017</h4>
+	  <h4>Tekovery, Mount Vernon </h4>
+      <br>
+      <p class="hideme" style="text-align: center" >
+      	-Technology refurbishing and recycling Part-time Internship.<br />
+		-Diagnosed and fixed hardware and software problems <br /> 
+		-Testing, configuring, and preparing computer equipment<br />
+		-Repairing/upgrading both hardware and software on Linux-, Mac- and Windows-compatible devices<br />
+		- Researching and evaluating new software and hardware when necessary<br />
+		- Operating System installation and imaging
+ <br/>
+    </div><!-- /col-lg-3 -->  
+    
+    
+    <div class="row"><div class="col-lg-3  col-md-6 service-line">
+      <img src="https://image.freepik.com/free-icon/assistance_318-103676.jpg">
+      <h3>Web Programmer (Contract)</h3>
+      <h4>OCTOBER 2017 - Present</h4>
+	  <h4>Kubuni Technology, Mount Vernon</h4>
+      <br>
+      <p class="hideme" style="text-align: center">
+      	-Web programing for clients using HTML, CSS, Javascript and PHP<br />
+		-Website and other projects still in progress.
+ <br/>
+    </div><!-- /col-lg-3 --> 
+    <div class="col-lg-3 col-md-6  service-line">
+      <img src="https://image.freepik.com/free-icon/assistance_318-103676.jpg">
+      <h3>Webpage Programmer(Contract)</h3>
       <h4>May 2016 - Present</h4>
 	  <h4>Worked from home</h4>
       <br>
-      <p class="hideme">- Making websites for K9 Elements creator Valieie Doza .<br />
+      <p class="hideme" style="text-align: center">- Making websites for K9 Elements creator Valieie Doza .<br />
 	  - Project used Html, Javascript, and CSS. <br/>
 	  - Website still in progress </p>
-    </div><!-- /col-lg-3 -->
-    <div class="col-lg-3 service-line">
+    </div><!-- /col-lg-3 --></div>
+    
+    
+    <div class="row"><div class="col-lg-3 col-md-6 service-line">
+      <img src="https://image.freepik.com/free-icon/assistance_318-103676.jpg">
+    <h3>ELT STEM Teacher</h3>
+      <h4>SEPTEMBER  2017 - OCTOBER 2017</h4>
+	  <h4>National Black United Federation of Charities INC, Yonkers </h4>
+      <br>
+      <p class="hideme" style="text-align: center">
+      	-After school program, teaching children  basic computer science concepts<br />
+		-Lesson planning dedicated to children of the ages 12 to 15<br/>
+    </div><!-- /col-lg-3 -->  
+   
+    <div class="col-lg-4 col-md-6  service-line">
       <img src="https://image.freepik.com/free-icon/assistance_318-103676.jpg">
       <h3>Bus Boy</h3>
       <h4>May 2015 - August 2015</h4>
 	  <h4>Yonkers Raceway, Yonkers, NY 10704</h4>
       <br>
-      <p class="hideme">- Maintained great relationships with customer on a day to day basis.<br />
+      <p class="hideme" style="text-align: center">- Maintained great relationships with customer on a day to day basis.<br />
 	  - Cooperated well with superiors and coworkers. <br/>
 	  - Oganized and cleaned  work space.</p>
-    </div><!-- /col-lg-3 -->
+    </div><!-- /col-lg-3 --></div>
     
-    <div class="col-lg-3 service-line">
+    
+    <div class="row"><div class="col-lg-4 col-md-6 service-line">
       <img src="https://image.freepik.com/free-icon/businessman_318-72886.jpg">
       <h3>Office Assistant</h3>
       <h4>June 2010 – June 2012, May 2015 - August 2015</h4>
      <h4>Dalco Financial Services, Mt. Vernon, NY 10552</h4>
       <br>
-       <p class="hideme">- Filed important documents and bill payments<br />
+       <p class="hideme" style="text-align: center">- Filed important documents and bill payments<br />
 	 - Answered incoming phone calls on three business lines. <br />
 	 - Maintained phone log: screen and direct phone calls.<br />
 	 - Greeted customers and set up appointments upon request.	<br />
 	- Sorted and distributed incoming mail to staff members</p>
     </div><!-- /col-lg-3 -->
 
-    <div class="col-lg-3 service-line">
+    <div class="col-lg-4 col-md-6  service-line">
       <img src="https://image.freepik.com/free-icon/call-center-assistant_318-73238.png">
       <h3>Office Assistant</h3>
       <h4>October 2013 - December 2013</h4>
 	  <h4>Iona College Office of Provost, New Rochelle, NY 10801</h4>
       <br>
-      <p class="hideme">- Organized and developed important files.<br />
+      <p class="hideme" style="text-align: center">- Organized and developed important files.<br />
 	 	- Edited essential Microsoft Office documents.<br />
 	 	- Fulfilled office supervisor’s requests.<br />
 	 	- Recorded messages to fellow employees.</p>
-</div><!-- /col-lg-3 -->
+</div><!-- /col-lg-3 --></div>
+    
+    
+    
+    
   </div><!-- /container -->
   
   
@@ -270,12 +318,12 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
         <h3 >Education</h3>
         <hr />				
 											  		<h2>SUNY New Paltz 2014 - Present</h2>
-											  		 	<p class="hideme">- Computer Science Major <br/>
+											  		 	<p class="hideme" style="text-align: center">- Computer Science Major <br/>
 											  		 	- Completed 6th semester of college and achieved 116 credits</p>
 											  		 	
 											  		 	<br />
 											  		 <h2>Iona College 2012 - 2014</h2>
-											  		 	<p class="hideme">- Completed 4th semester of college and achieved 64 credits <br/>
+											  		 	<p class="hideme" style="text-align: center">- Completed 4th semester of college and achieved 64 credits <br/>
 											  		 	=- Computer Science Major</p>
 											  		 	
 											  		 	<br />
@@ -284,29 +332,33 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
         <h3>Related Coursework</h3>
         <hr />
 											  		 <h2>Web Programing Spring 2014</h2>
-											  		 	<p class="hideme">- SUNY New Paltz Computer Science class<br/>
+											  		 	<p class="hideme" style="text-align: center">- SUNY New Paltz Computer Science class<br/>
 											  		 	- Professor Moshe Plotkin<br/>
 											  		 	- 4 credit class taught students how to build and develop a a responsive website with functional backend and frontend.</p>
 											  		 	<br />		
 											  		 <h2>Software Engineering Fall 2015</h2>
-											  		 	<p class="hideme">- SUNY New Paltz Computer Science class<br />
+											  		 	<p class="hideme" style="text-align: center">- SUNY New Paltz Computer Science class<br />
 											  		 	- Professor Atul Kumar (Worked at IBM)<br />
 											  		 	- 4 credit class challenged a small group of students to make a website for a client<br />
 											  		 	- At the end Team project turned into a solo independent project – <a href="#project">Private Messager Website</a></p>
 											  		 	<br />
 											  		 <h2>Computer Aided Design 1 and 2 Fall 2016 - Spring 2017</h2>
-											  		 <p class="hideme">- SUNY New Paltz Computer Science class<br />
+											  		 <p class="hideme" style="text-align: center">- SUNY New Paltz Computer Science class<br />
 											  		 	- Micheal Gayk<br />
 											  		 	- 4 credit class studied 3d modeling an printing techniques<br />
 											  		 	- Rhino3d , Rhinoscript and Fusion360 </p>
 							
 											  		 <br />	
 											  		 <h2>Embeded Linux Spring 2017</h2>	
-											  		 <p class="hideme">- SUNY New Paltz Computer Science class<br />
+											  		 <p class="hideme" style="text-align: center">- SUNY New Paltz Computer Science class<br />
 											  		 	- Professor Eastwarean<br />
 											  		 	- 4 credit class utilized a raspberry pi record data and operate <br />
-											  		 	- Team project TBA</p>
+											  		 	- Team project: <a target="_blank" href="https://drive.google.com/file/d/1ynj3L-CliUUN9HbdI4ZZIeEcL-yfL1Hr/view?usp=sharing">CameraBom</a></p>
 											  		 	<br />
+											  		 	<h2>Web Programing Spring 2017</h2>
+											  		 	<p class="hideme" style="text-align: center">- SUNY New Paltz Computer Science Graduate class<br/>
+											  		 	- 4 credit class taught advanced SQL database programing skills and Methods</p>
+											  		 	<br />		
 											  		 <br />						
       </div><!-- col-lg-6 -->
   </div><!-- container -->  
@@ -340,7 +392,7 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
         <div class="col-sm-6 ">
         	<h3>Private Messager</h3>
             <br>
-             <h2 class="hideme">- Team class project turned to solo independent project <br/>
+             <h2 class="hideme" style="text-align: center">- Team class project turned to solo independent project <br/>
 			- Allows users to register, login and message other users <br/>
 			- Utilizes PHP, Javascript, HTML, CSS and Bootstrap</h2>
         </div><!-- /col --></div>
@@ -371,6 +423,32 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
         </div><!-- /col --></div>
         
         
+          <div class="col-sm-12">
+        <!-- PORTFOLIO ITEM -->
+        <div class="col-sm-6 ">
+            <div class="grid mask">
+            	
+            <figure>
+              <a href="https://drive.google.com/file/d/1ynj3L-CliUUN9HbdI4ZZIeEcL-yfL1Hr/view?usp=sharing" target="_blank"><img width="50" height="50" src="camboom.png"  /></a>
+              <figcaption>
+                <h5>CameraBoom</h5>
+                <a href="https://drive.google.com/file/d/1ynj3L-CliUUN9HbdI4ZZIeEcL-yfL1Hr/view?usp=sharing "target="_blank" class="btn-primary btn-lg">Take a Look</a>
+              </figcaption><!-- /figcaption -->
+            </figure><!-- /figure -->
+            </div><!-- /grid-mask -->
+            <br/>
+        </div><!-- /col -->
+        <div class="col-sm-6 ">
+        	<h3>Cameraboom</h3>
+            <br>
+             <h2 class="hideme" style="text-align: center">- Team class project with Joseph Abel <br/>
+			- Allows user a web interfaces to take pictures and control camera's direction via raspberry pi <br/>
+			- Used linux HTMl,CSS,Javascript,and PythonFlask<br />
+			- Click the picture to the left for demonstration<br />
+			- Web Programer:Nathan Dalling, Electrical Engineer: Joseph Abel 
+			</h2>
+        </div><!-- /col --></div>
+        
         
        
         
@@ -387,8 +465,7 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
         <hr>
         <br>
         <br>
-        
-      <div class="col-lg-6">
+        <div class="row"><div class="col-lg-6">
         <!-- ACCORDION -->
                 <div class="accordion" id="accordion2">
                     <div class="accordion-group">
@@ -411,9 +488,9 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
                         </div><!-- /collapse -->
                     </div><!-- /accordion-group -->
           </div><!-- Accordion -->
-        </div><!-- /col-lg-6 -->
-
-      <div class="col-lg-6">
+        </div><!-- /col-lg-6 --></div>
+        
+        <div class="row"> <div class="col-lg-6">
         <!-- ACCORDION -->
                 <div class="accordion" id="accordion1">
                     <div class="accordion-group">
@@ -437,8 +514,9 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
                         </div><!-- /collapse -->
                     </div><!-- /accordion-group -->
           </div><!-- Accordion -->
-      </div><!-- /col-lg-6 -->
-       <div class="col-lg-6">
+      </div><!-- /col-lg-6 --></div>
+        
+        <div class="row"> <div class="col-lg-6">
         <!-- ACCORDION -->
                 <div class="accordion" id="accordion1">
                     <div class="accordion-group">
@@ -447,16 +525,12 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
                             <plus> + </plus> Microsoft Office
                             </a>
                         </div><!-- /accordion-heading -->
-                        <div id="collapseThree" class="accordion-body collapse in">
-                          <br>
-                            <div class="accordion-inner">
-                             
-                </div><!-- /accordion-inner -->
-                        </div><!-- /collapse -->
+                       
                     </div><!-- /accordion-group -->
           </div><!-- Accordion -->
-      </div><!-- /col-lg-6 -->
-       <div class="col-lg-6">
+      </div><!-- /col-lg-6 --></div>
+        
+        <div class="row"> <div class="col-lg-6">
         <!-- ACCORDION -->
                 <div class="accordion" id="accordion1">
                     <div class="accordion-group">
@@ -474,6 +548,12 @@ var edd_scripts = {"ajaxurl":"http:\/\/gentsthemes.com\/wp-admin\/admin-ajax.php
                     </div><!-- /accordion-group -->
           </div><!-- Accordion -->
       </div><!-- /col-lg-6 -->
+      </div>
+        
+      
+
+     
+      
       
       
       
